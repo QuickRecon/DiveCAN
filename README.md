@@ -21,3 +21,11 @@ Shearwaters implementation offloads almost all of the work for managing the CCR 
 
 ## Testing
 As it is only a 125kbps bus it is very tolerant of mistreatment with regards to termination resistors and differential impedance matching, and the CANLow transition can be sampled with a simple logic analyser. Furthermore it is tolerant to higher than standard voltage transitions, so an [Arduino CAN shield](https://www.keyestudio.com/2019new-keyestudio-can-bus-shield-mcp2551-chip-with-sd-socket-for-arduino-uno-r3-p0543.html) can be used for read/write on the bus. This hardware was used for testing/demonstration of the reverse engineered protocol, further details found under `Testing/`.
+
+
+# TO DO
+- Document messaging protocol
+- Demo selectable options in menu
+- Demo multiple devices on bus
+- Make more datacaptures on different units
+- Identify connector/vendor
