@@ -1,4 +1,4 @@
-[DiveCAN Pinout]: Pinout.png "DiveCAN Pinout"
+![DiveCAN Pinout](Pinout.png)
 
 # Power
 The Power pin is very general purpose and the voltage on this pin depends on the unit hosting the DiveCAN bus. On the rEvo this pin is held at 9v, supplied by the 9v battery in the battery box. On a JJ this pin is at 3.3v, being provided by the computer in the case of the control bus and by a SAFT primary lithium cell for the monitor bus. The current that can be continuously drawn from the Shearwater computer power supply over the DiveCAN bus is ~16 mA (as tested on a JJ Petrel 2), this power is available even when the computer is turned off.
