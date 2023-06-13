@@ -19,6 +19,8 @@ Shearwaters implementation offloads almost all of the work for managing the CCR 
 - Perform cell voting and calculation of consensus value.
 - Calibrate the cells when told by the display, update internal calibration coefficients.
 
+The shearwater computers perform very little (none found) error/sanity checking on the values provided by the controller, and display what is sent over the bus even if that information is contradictory (for example 0.99 PPO2 with 0mV cells).
+
 ## Testing
 As it is only a 125kbps bus it is very tolerant of mistreatment with regards to termination resistors and differential impedance matching, and the CANLow transition can be sampled with a simple logic analyser. Furthermore it is tolerant to higher than standard voltage transitions, so an [Arduino CAN shield](https://www.keyestudio.com/2019new-keyestudio-can-bus-shield-mcp2551-chip-with-sd-socket-for-arduino-uno-r3-p0543.html) can be used for read/write on the bus. This hardware was used for testing/demonstration of the reverse engineered protocol, further details found under `Testing/`.
 
