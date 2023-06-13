@@ -1,0 +1,1100 @@
+20966592-20966615 CAN: Fields: Start of frame
+20966616-20966879 CAN: Fields: Identifier: 845 (0x34d)
+20966880-20966903 CAN: Fields: Substitute remote request: 1
+20966904-20966927 CAN: Fields: Identifier extension bit: extended frame
+20966928-20967431 CAN: Fields: Extended Identifier: 197633 (0x30401)
+20966928-20967431 CAN: Fields: Full Identifier: 221709313 (0xd370401)
+20967432-20967455 CAN: Fields: Remote transmission request: data frame
+20967456-20967479 CAN: Fields: Reserved bit 1: 0
+20967480-20967503 CAN: Fields: Reserved bit 0: 0
+20967504-20967623 CAN: Fields: Data length code: 3
+20967624-20967815 CAN: Fields: Data byte 0: 0xa8
+20967816-20968007 CAN: Fields: Data byte 1: 0xf3
+20968008-20968223 CAN: Fields: Data byte 2: 0x00
+20968224-20968583 CAN: Fields: CRC-15 sequence: 0x29db
+20968584-20968607 CAN: Fields: CRC delimiter: 1
+20968608-20968631 CAN: Fields: ACK slot: NACK
+20968632-20968655 CAN: Fields: ACK delimiter: 0
+20968656-20968823 CAN: Fields: End of frame
+20969040-20969063 CAN: Fields: Start of frame
+20969064-20969327 CAN: Fields: Identifier: 845 (0x34d)
+20969328-20969351 CAN: Fields: Substitute remote request: 1
+20969352-20969375 CAN: Fields: Identifier extension bit: extended frame
+20969376-20969878 CAN: Fields: Extended Identifier: 197633 (0x30401)
+20969376-20969878 CAN: Fields: Full Identifier: 221709313 (0xd370401)
+20969879-20969902 CAN: Fields: Remote transmission request: data frame
+20969903-20969926 CAN: Fields: Reserved bit 1: 0
+20969927-20969950 CAN: Fields: Reserved bit 0: 0
+20969951-20970070 CAN: Fields: Data length code: 3
+20970071-20970262 CAN: Fields: Data byte 0: 0xa8
+20970263-20970454 CAN: Fields: Data byte 1: 0xf3
+20970455-20970670 CAN: Fields: Data byte 2: 0x00
+20970671-20971030 CAN: Fields: CRC-15 sequence: 0x29db
+20971031-20971054 CAN: Fields: CRC delimiter: 1
+20971055-20971078 CAN: Fields: ACK slot: NACK
+20971079-20971102 CAN: Fields: ACK delimiter: 0
+20971103-20971270 CAN: Fields: End of frame
+20971487-20971510 CAN: Fields: Start of frame
+20971511-20971774 CAN: Fields: Identifier: 845 (0x34d)
+20971775-20971798 CAN: Fields: Substitute remote request: 1
+20971799-20971822 CAN: Fields: Identifier extension bit: extended frame
+20971823-20972326 CAN: Fields: Extended Identifier: 197633 (0x30401)
+20971823-20972326 CAN: Fields: Full Identifier: 221709313 (0xd370401)
+20972327-20972350 CAN: Fields: Remote transmission request: data frame
+20972351-20972374 CAN: Fields: Reserved bit 1: 0
+20972375-20972398 CAN: Fields: Reserved bit 0: 0
+20972399-20972518 CAN: Fields: Data length code: 3
+20972519-20972710 CAN: Fields: Data byte 0: 0xa8
+20972711-20972902 CAN: Fields: Data byte 1: 0xf3
+20972903-20973118 CAN: Fields: Data byte 2: 0x00
+20973119-20973478 CAN: Fields: CRC-15 sequence: 0x29db
+20973479-20973502 CAN: Fields: CRC delimiter: 1
+20973503-20973526 CAN: Fields: ACK slot: NACK
+20973527-20973550 CAN: Fields: ACK delimiter: 0
+20973551-20973718 CAN: Fields: End of frame
+20973935-20973958 CAN: Fields: Start of frame
+20973959-20974222 CAN: Fields: Identifier: 845 (0x34d)
+20974223-20974246 CAN: Fields: Substitute remote request: 1
+20974247-20974270 CAN: Fields: Identifier extension bit: extended frame
+20974271-20974774 CAN: Fields: Extended Identifier: 197633 (0x30401)
+20974271-20974774 CAN: Fields: Full Identifier: 221709313 (0xd370401)
+20974775-20974798 CAN: Fields: Remote transmission request: data frame
+20974799-20974822 CAN: Fields: Reserved bit 1: 0
+20974823-20974846 CAN: Fields: Reserved bit 0: 0
+20974847-20974966 CAN: Fields: Data length code: 3
+20974967-20975158 CAN: Fields: Data byte 0: 0xa8
+20975159-20975350 CAN: Fields: Data byte 1: 0xf3
+20975351-20975565 CAN: Fields: Data byte 2: 0x00
+20975566-20975925 CAN: Fields: CRC-15 sequence: 0x29db
+20975926-20975949 CAN: Fields: CRC delimiter: 1
+20975950-20975973 CAN: Fields: ACK slot: NACK
+20975974-20975997 CAN: Fields: ACK delimiter: 0
+20975998-20976165 CAN: Fields: End of frame
+20976382-20976405 CAN: Fields: Start of frame
+20976406-20976669 CAN: Fields: Identifier: 845 (0x34d)
+20976670-20976693 CAN: Fields: Substitute remote request: 1
+20976694-20976717 CAN: Fields: Identifier extension bit: extended frame
+20976718-20977221 CAN: Fields: Extended Identifier: 197633 (0x30401)
+20976718-20977221 CAN: Fields: Full Identifier: 221709313 (0xd370401)
+20977222-20977245 CAN: Fields: Remote transmission request: data frame
+20977246-20977269 CAN: Fields: Reserved bit 1: 0
+20977270-20977293 CAN: Fields: Reserved bit 0: 0
+20977294-20977413 CAN: Fields: Data length code: 3
+20977414-20977605 CAN: Fields: Data byte 0: 0xa8
+20977606-20977797 CAN: Fields: Data byte 1: 0xf3
+20977798-20978013 CAN: Fields: Data byte 2: 0x00
+20978014-20978373 CAN: Fields: CRC-15 sequence: 0x29db
+20978374-20978397 CAN: Fields: CRC delimiter: 1
+20978398-20978421 CAN: Fields: ACK slot: NACK
+20978422-20978445 CAN: Fields: ACK delimiter: 0
+20978446-20978613 CAN: Fields: End of frame
+20978830-20978853 CAN: Fields: Start of frame
+20978854-20979117 CAN: Fields: Identifier: 845 (0x34d)
+20979118-20979141 CAN: Fields: Substitute remote request: 1
+20979142-20979165 CAN: Fields: Identifier extension bit: extended frame
+20979166-20979669 CAN: Fields: Extended Identifier: 197633 (0x30401)
+20979166-20979669 CAN: Fields: Full Identifier: 221709313 (0xd370401)
+20979670-20979693 CAN: Fields: Remote transmission request: data frame
+20979694-20979717 CAN: Fields: Reserved bit 1: 0
+20979718-20979741 CAN: Fields: Reserved bit 0: 0
+20979742-20979861 CAN: Fields: Data length code: 3
+20979862-20980053 CAN: Fields: Data byte 0: 0xa8
+20980054-20980245 CAN: Fields: Data byte 1: 0xf3
+20980246-20980461 CAN: Fields: Data byte 2: 0x00
+20980462-20980821 CAN: Fields: CRC-15 sequence: 0x29db
+20980822-20980845 CAN: Fields: CRC delimiter: 1
+20980846-20980869 CAN: Fields: ACK slot: NACK
+20980870-20980893 CAN: Fields: ACK delimiter: 0
+20980894-20981061 CAN: Fields: End of frame
+20981278-20981301 CAN: Fields: Start of frame
+20981302-20981565 CAN: Fields: Identifier: 845 (0x34d)
+20981566-20981589 CAN: Fields: Substitute remote request: 1
+20981590-20981613 CAN: Fields: Identifier extension bit: extended frame
+20981614-20982117 CAN: Fields: Extended Identifier: 197633 (0x30401)
+20981614-20982117 CAN: Fields: Full Identifier: 221709313 (0xd370401)
+20982118-20982141 CAN: Fields: Remote transmission request: data frame
+20982142-20982165 CAN: Fields: Reserved bit 1: 0
+20982166-20982189 CAN: Fields: Reserved bit 0: 0
+20982190-20982309 CAN: Fields: Data length code: 3
+20982310-20982501 CAN: Fields: Data byte 0: 0xa8
+20982502-20982693 CAN: Fields: Data byte 1: 0xf3
+20982694-20982909 CAN: Fields: Data byte 2: 0x00
+20982910-20983269 CAN: Fields: CRC-15 sequence: 0x29db
+20983270-20983293 CAN: Fields: CRC delimiter: 1
+20983294-20983317 CAN: Fields: ACK slot: NACK
+20983318-20983341 CAN: Fields: ACK delimiter: 0
+20983342-20983509 CAN: Fields: End of frame
+20983726-20983749 CAN: Fields: Start of frame
+20983750-20984013 CAN: Fields: Identifier: 845 (0x34d)
+20984014-20984037 CAN: Fields: Substitute remote request: 1
+20984038-20984061 CAN: Fields: Identifier extension bit: extended frame
+20984062-20984565 CAN: Fields: Extended Identifier: 197633 (0x30401)
+20984062-20984565 CAN: Fields: Full Identifier: 221709313 (0xd370401)
+20984566-20984589 CAN: Fields: Remote transmission request: data frame
+20984590-20984613 CAN: Fields: Reserved bit 1: 0
+20984614-20984637 CAN: Fields: Reserved bit 0: 0
+20984638-20984757 CAN: Fields: Data length code: 3
+20984758-20984949 CAN: Fields: Data byte 0: 0xa8
+20984950-20985141 CAN: Fields: Data byte 1: 0xf3
+20985142-20985357 CAN: Fields: Data byte 2: 0x00
+20985358-20985717 CAN: Fields: CRC-15 sequence: 0x29db
+20985718-20985741 CAN: Fields: CRC delimiter: 1
+20985742-20985765 CAN: Fields: ACK slot: NACK
+20985766-20985789 CAN: Fields: ACK delimiter: 0
+20985790-20985957 CAN: Fields: End of frame
+20985950-20985973 CAN: Fields: Start of frame
+20985974-20986269 CAN: Fields: Identifier: 2046 (0x7fe)
+20986270-20986293 CAN: Fields: Substitute remote request: 1
+20986294-20986317 CAN: Fields: Identifier extension bit: extended frame
+20986318-20986797 CAN: Fields: Extended Identifier: 79809 (0x137c1)
+20986318-20986797 CAN: Fields: Full Identifier: 536426433 (0x1ff937c1)
+20986798-20986821 CAN: Fields: Remote transmission request: data frame
+20986822-20986845 CAN: Fields: Reserved bit 1: 0
+20986846-20986869 CAN: Fields: Reserved bit 0: 0
+20986870-20986989 CAN: Fields: Data length code: 0
+20986990-20987373 CAN: Fields: CRC-15 sequence: 0x1075
+20987374-20987397 CAN: Fields: CRC delimiter: 0
+20987398-20987421 CAN: Fields: ACK slot: ACK
+20987422-20987445 CAN: Fields: ACK delimiter: 0
+20987446-20987613 CAN: Fields: End of frame
+20987638-20987661 CAN: Fields: Start of frame
+20987662-20987949 CAN: Fields: Identifier: 5 (0x5)
+20987950-20987973 CAN: Fields: Substitute remote request
+20987974-20987997 CAN: Fields: Identifier extension bit: standard frame
+20987998-20988021 CAN: Fields: Flexible data format: 1
+20988022-20988045 CAN: Fields: Reserved: 1
+20988046-20988069 CAN: Fields: Bit rate switch: 1
+20988070-20988093 CAN: Fields: Error state indicator: 0
+20988094-20988189 CAN: Fields: Data length code: 13
+20988189-20988378 CAN: Fields: Data byte 0: 0xdf
+20988379-20988567 CAN: Fields: Data byte 1: 0xff
+20988568-20988756 CAN: Fields: Data byte 2: 0xff
+20988757-20988945 CAN: Fields: Data byte 3: 0xff
+20988946-20989134 CAN: Fields: Data byte 4: 0xff
+20989135-20989323 CAN: Fields: Data byte 5: 0xff
+20989324-20989512 CAN: Fields: Data byte 6: 0xff
+20989513-20989701 CAN: Fields: Data byte 7: 0xff
+20989702-20989890 CAN: Fields: Data byte 8: 0xff
+20989891-20990079 CAN: Fields: Data byte 9: 0xff
+20990080-20990268 CAN: Fields: Data byte 10: 0xff
+20990269-20990457 CAN: Fields: Data byte 11: 0xff
+20990458-20990646 CAN: Fields: Data byte 12: 0xff
+20990646-20990835 CAN: Fields: Data byte 13: 0xff
+20990835-20991024 CAN: Fields: Data byte 14: 0xff
+20991024-20991213 CAN: Fields: Data byte 15: 0xff
+20991213-20991402 CAN: Fields: Data byte 16: 0xff
+20991402-20991591 CAN: Fields: Data byte 17: 0xff
+20991591-20991780 CAN: Fields: Data byte 18: 0xff
+20991780-20991969 CAN: Fields: Data byte 19: 0xff
+20991969-20992158 CAN: Fields: Data byte 20: 0xff
+20992158-20992347 CAN: Fields: Data byte 21: 0xff
+20992347-20992536 CAN: Fields: Data byte 22: 0xff
+20992536-20992725 CAN: Fields: Data byte 23: 0xff
+20992725-20992914 CAN: Fields: Data byte 24: 0xff
+20992914-20993103 CAN: Fields: Data byte 25: 0xff
+20993103-20993292 CAN: Fields: Data byte 26: 0xff
+20993292-20993481 CAN: Fields: Data byte 27: 0xff
+20993481-20993669 CAN: Fields: Data byte 28: 0xff
+20993670-20993858 CAN: Fields: Data byte 29: 0xff
+20993859-20994047 CAN: Fields: Data byte 30: 0xff
+20994048-20994236 CAN: Fields: Data byte 31: 0xff
+20994237-20994992 CAN: Fields: CRC-21 sequence: 0xffffffff
+20994993-20995016 CAN: Fields: CRC delimiter: 1
+20995125-20995148 CAN: Fields: ACK slot: NACK
+20995149-20995172 CAN: Fields: ACK delimiter: 1
+20995173-20995340 CAN: Fields: End of frame
+27641107-27641130 CAN: Fields: Start of frame
+27641131-27641419 CAN: Fields: Identifier: 832 (0x340)
+27641420-27641443 CAN: Fields: Substitute remote request: 1
+27641444-27641467 CAN: Fields: Identifier extension bit: extended frame
+27641468-27641971 CAN: Fields: Extended Identifier: 4 (0x4)
+27641468-27641971 CAN: Fields: Full Identifier: 218103812 (0xd000004)
+27641972-27641995 CAN: Fields: Remote transmission request: data frame
+27641996-27642019 CAN: Fields: Reserved bit 1: 0
+27642020-27642043 CAN: Fields: Reserved bit 0: 0
+27642069-27642164 CAN: Fields: Data length code: 3
+27642165-27642380 CAN: Fields: Data byte 0: 0x01
+27642381-27642596 CAN: Fields: Data byte 1: 0x00
+27642597-27642812 CAN: Fields: Data byte 2: 0x09
+27642813-27643173 CAN: Fields: CRC-15 sequence: 0x15c5
+27643174-27643197 CAN: Fields: CRC delimiter: 1
+27643198-27643221 CAN: Fields: ACK slot: ACK
+27643222-27643245 CAN: Fields: ACK delimiter: 1
+27643246-27643413 CAN: Fields: End of frame
+27644904-27644927 CAN: Fields: Start of frame
+27644928-27645215 CAN: Fields: Identifier: 832 (0x340)
+27645216-27645239 CAN: Fields: Substitute remote request: 1
+27645240-27645263 CAN: Fields: Identifier extension bit: extended frame
+27645264-27645744 CAN: Fields: Extended Identifier: 65540 (0x10004)
+27645264-27645744 CAN: Fields: Full Identifier: 218169348 (0xd010004)
+27645745-27645768 CAN: Fields: Remote transmission request: data frame
+27645769-27645792 CAN: Fields: Reserved bit 1: 0
+27645793-27645816 CAN: Fields: Reserved bit 0: 0
+27645841-27645936 CAN: Fields: Data length code: 8
+27645937-27646128 CAN: Fields: Data byte 0: 0x53
+27646130-27646321 CAN: Fields: Data byte 1: 0x4f
+27646322-27646513 CAN: Fields: Data byte 2: 0x4c
+27646514-27646705 CAN: Fields: Data byte 3: 0x4f
+27646706-27646897 CAN: Fields: Data byte 4: 0x20
+27646922-27647114 CAN: Fields: Data byte 5: 0x32
+27647115-27647306 CAN: Fields: Data byte 6: 0x20
+27647331-27647522 CAN: Fields: Data byte 7: 0x20
+27647547-27647906 CAN: Fields: CRC-15 sequence: 0x6495
+27647907-27647930 CAN: Fields: CRC delimiter: 1
+27647932-27647955 CAN: Fields: ACK slot: ACK
+27647956-27647979 CAN: Fields: ACK delimiter: 1
+27647980-27648147 CAN: Fields: End of frame
+27652113-27652136 CAN: Fields: Start of frame
+27652137-27652400 CAN: Fields: Identifier: 884 (0x374)
+27652401-27652424 CAN: Fields: Substitute remote request: 1
+27652425-27652448 CAN: Fields: Identifier extension bit: extended frame
+27652449-27652929 CAN: Fields: Extended Identifier: 131076 (0x20004)
+27652449-27652929 CAN: Fields: Full Identifier: 231866372 (0xdd20004)
+27652930-27652953 CAN: Fields: Remote transmission request: data frame
+27652954-27652977 CAN: Fields: Reserved bit 1: 0
+27652978-27653001 CAN: Fields: Reserved bit 0: 0
+27653026-27653121 CAN: Fields: Data length code: 8
+27653122-27653337 CAN: Fields: Data byte 0: 0x41
+27653338-27653529 CAN: Fields: Data byte 1: 0x42
+27653530-27653721 CAN: Fields: Data byte 2: 0x30
+27653722-27653938 CAN: Fields: Data byte 3: 0x30
+27653939-27654154 CAN: Fields: Data byte 4: 0x30
+27654155-27654370 CAN: Fields: Data byte 5: 0x43
+27654371-27654562 CAN: Fields: Data byte 6: 0x35
+27654563-27654755 CAN: Fields: Data byte 7: 0x31
+27654756-27655115 CAN: Fields: CRC-15 sequence: 0x0eeb
+27655116-27655139 CAN: Fields: CRC delimiter: 1
+27655140-27655163 CAN: Fields: ACK slot: ACK
+27655164-27655187 CAN: Fields: ACK delimiter: 1
+27655188-27655355 CAN: Fields: End of frame
+28197592-28197615 CAN: Fields: Start of frame
+28197616-28197879 CAN: Fields: Identifier: 836 (0x344)
+28197880-28197903 CAN: Fields: Substitute remote request: 1
+28197904-28197927 CAN: Fields: Identifier extension bit: extended frame
+28197929-28198408 CAN: Fields: Extended Identifier: 65540 (0x10004)
+28197929-28198408 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+28198409-28198432 CAN: Fields: Remote transmission request: data frame
+28198433-28198456 CAN: Fields: Reserved bit 1: 0
+28198457-28198480 CAN: Fields: Reserved bit 0: 0
+28198505-28198600 CAN: Fields: Data length code: 7
+28198601-28198817 CAN: Fields: Data byte 0: 0x00
+28198818-28199057 CAN: Fields: Data byte 1: 0x00
+28199058-28199273 CAN: Fields: Data byte 2: 0x03
+28199274-28199465 CAN: Fields: Data byte 3: 0xd1
+28199467-28199682 CAN: Fields: Data byte 4: 0x00
+28199683-28199922 CAN: Fields: Data byte 5: 0x00
+28199923-28200138 CAN: Fields: Data byte 6: 0x00
+28200139-28200499 CAN: Fields: CRC-15 sequence: 0x42ab
+28200500-28200523 CAN: Fields: CRC delimiter: 1
+28200523-28200546 CAN: Fields: ACK slot: ACK
+28200547-28200570 CAN: Fields: ACK delimiter: 1
+28200571-28200738 CAN: Fields: End of frame
+28204465-28204488 CAN: Fields: Start of frame
+28204489-28204776 CAN: Fields: Identifier: 833 (0x341)
+28204777-28204800 CAN: Fields: Substitute remote request: 1
+28204801-28204824 CAN: Fields: Identifier extension bit: extended frame
+28204825-28205329 CAN: Fields: Extended Identifier: 4 (0x4)
+28204825-28205329 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+28205330-28205353 CAN: Fields: Remote transmission request: data frame
+28205354-28205377 CAN: Fields: Reserved bit 1: 0
+28205378-28205401 CAN: Fields: Reserved bit 0: 0
+28205426-28205521 CAN: Fields: Data length code: 4
+28205522-28205737 CAN: Fields: Data byte 0: 0x00
+28205762-28205978 CAN: Fields: Data byte 1: 0x00
+28205979-28206194 CAN: Fields: Data byte 2: 0x12
+28206195-28206410 CAN: Fields: Data byte 3: 0x00
+28206411-28206771 CAN: Fields: CRC-15 sequence: 0x646d
+28206772-28206795 CAN: Fields: CRC delimiter: 1
+28206796-28206819 CAN: Fields: ACK slot: ACK
+28206820-28206843 CAN: Fields: ACK delimiter: 1
+28206844-28207011 CAN: Fields: End of frame
+28212491-28212514 CAN: Fields: Start of frame
+28212515-28212778 CAN: Fields: Identifier: 882 (0x372)
+28212779-28212802 CAN: Fields: Substitute remote request: 1
+28212803-28212826 CAN: Fields: Identifier extension bit: extended frame
+28212827-28213307 CAN: Fields: Extended Identifier: 131076 (0x20004)
+28212827-28213307 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+28213308-28213331 CAN: Fields: Remote transmission request: data frame
+28213332-28213355 CAN: Fields: Reserved bit 1: 0
+28213356-28213379 CAN: Fields: Reserved bit 0: 0
+28213404-28213499 CAN: Fields: Data length code: 2
+28213500-28213715 CAN: Fields: Data byte 0: 0x00
+28213716-28213932 CAN: Fields: Data byte 1: 0xfe
+28213933-28214316 CAN: Fields: CRC-15 sequence: 0x0d83
+28214317-28214340 CAN: Fields: CRC delimiter: 1
+28214341-28214364 CAN: Fields: ACK slot: ACK
+28214365-28214388 CAN: Fields: ACK delimiter: 1
+28214389-28214556 CAN: Fields: End of frame
+29397584-29397607 CAN: Fields: Start of frame
+29397608-29397872 CAN: Fields: Identifier: 836 (0x344)
+29397873-29397896 CAN: Fields: Substitute remote request: 1
+29397897-29397920 CAN: Fields: Identifier extension bit: extended frame
+29397921-29398400 CAN: Fields: Extended Identifier: 65540 (0x10004)
+29397921-29398400 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+29398401-29398424 CAN: Fields: Remote transmission request: data frame
+29398425-29398448 CAN: Fields: Reserved bit 1: 0
+29398449-29398472 CAN: Fields: Reserved bit 0: 0
+29398497-29398592 CAN: Fields: Data length code: 7
+29398594-29398809 CAN: Fields: Data byte 0: 0x00
+29398810-29399049 CAN: Fields: Data byte 1: 0x00
+29399050-29399265 CAN: Fields: Data byte 2: 0x03
+29399266-29399458 CAN: Fields: Data byte 3: 0xd1
+29399459-29399674 CAN: Fields: Data byte 4: 0x00
+29399675-29399914 CAN: Fields: Data byte 5: 0x00
+29399915-29400130 CAN: Fields: Data byte 6: 0x00
+29400131-29400491 CAN: Fields: CRC-15 sequence: 0x42ab
+29400492-29400515 CAN: Fields: CRC delimiter: 1
+29400515-29400538 CAN: Fields: ACK slot: ACK
+29400539-29400562 CAN: Fields: ACK delimiter: 1
+29400563-29400730 CAN: Fields: End of frame
+29404433-29404456 CAN: Fields: Start of frame
+29404457-29404744 CAN: Fields: Identifier: 833 (0x341)
+29404745-29404768 CAN: Fields: Substitute remote request: 1
+29404769-29404792 CAN: Fields: Identifier extension bit: extended frame
+29404793-29405297 CAN: Fields: Extended Identifier: 4 (0x4)
+29404793-29405297 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+29405298-29405321 CAN: Fields: Remote transmission request: data frame
+29405322-29405345 CAN: Fields: Reserved bit 1: 0
+29405346-29405369 CAN: Fields: Reserved bit 0: 0
+29405394-29405489 CAN: Fields: Data length code: 4
+29405490-29405705 CAN: Fields: Data byte 0: 0x00
+29405730-29405946 CAN: Fields: Data byte 1: 0x00
+29405947-29406162 CAN: Fields: Data byte 2: 0x12
+29406163-29406378 CAN: Fields: Data byte 3: 0x00
+29406379-29406739 CAN: Fields: CRC-15 sequence: 0x646d
+29406740-29406763 CAN: Fields: CRC delimiter: 1
+29406763-29406786 CAN: Fields: ACK slot: ACK
+29406787-29406810 CAN: Fields: ACK delimiter: 1
+29406811-29406978 CAN: Fields: End of frame
+29412483-29412506 CAN: Fields: Start of frame
+29412507-29412770 CAN: Fields: Identifier: 882 (0x372)
+29412771-29412794 CAN: Fields: Substitute remote request: 1
+29412795-29412818 CAN: Fields: Identifier extension bit: extended frame
+29412819-29413299 CAN: Fields: Extended Identifier: 131076 (0x20004)
+29412819-29413299 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+29413300-29413323 CAN: Fields: Remote transmission request: data frame
+29413324-29413347 CAN: Fields: Reserved bit 1: 0
+29413348-29413371 CAN: Fields: Reserved bit 0: 0
+29413396-29413491 CAN: Fields: Data length code: 2
+29413492-29413707 CAN: Fields: Data byte 0: 0x00
+29413708-29413924 CAN: Fields: Data byte 1: 0xfe
+29413925-29414308 CAN: Fields: CRC-15 sequence: 0x0d83
+29414309-29414332 CAN: Fields: CRC delimiter: 1
+29414333-29414356 CAN: Fields: ACK slot: ACK
+29414357-29414380 CAN: Fields: ACK delimiter: 1
+29414381-29414548 CAN: Fields: End of frame
+30599167-30599190 CAN: Fields: Start of frame
+30599191-30599455 CAN: Fields: Identifier: 836 (0x344)
+30599456-30599479 CAN: Fields: Substitute remote request: 1
+30599480-30599503 CAN: Fields: Identifier extension bit: extended frame
+30599504-30599983 CAN: Fields: Extended Identifier: 65540 (0x10004)
+30599504-30599983 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+30599984-30600007 CAN: Fields: Remote transmission request: data frame
+30600008-30600031 CAN: Fields: Reserved bit 1: 0
+30600032-30600055 CAN: Fields: Reserved bit 0: 0
+30600081-30600176 CAN: Fields: Data length code: 7
+30600177-30600392 CAN: Fields: Data byte 0: 0x00
+30600393-30600632 CAN: Fields: Data byte 1: 0x00
+30600633-30600848 CAN: Fields: Data byte 2: 0x03
+30600849-30601041 CAN: Fields: Data byte 3: 0xd1
+30601042-30601257 CAN: Fields: Data byte 4: 0x00
+30601258-30601497 CAN: Fields: Data byte 5: 0x00
+30601498-30601714 CAN: Fields: Data byte 6: 0x00
+30601715-30602074 CAN: Fields: CRC-15 sequence: 0x42ab
+30602075-30602098 CAN: Fields: CRC delimiter: 1
+30602101-30602124 CAN: Fields: ACK slot: ACK
+30602125-30602148 CAN: Fields: ACK delimiter: 1
+30602149-30602316 CAN: Fields: End of frame
+30606020-30606043 CAN: Fields: Start of frame
+30606044-30606331 CAN: Fields: Identifier: 833 (0x341)
+30606332-30606355 CAN: Fields: Substitute remote request: 1
+30606356-30606379 CAN: Fields: Identifier extension bit: extended frame
+30606380-30606884 CAN: Fields: Extended Identifier: 4 (0x4)
+30606380-30606884 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+30606885-30606908 CAN: Fields: Remote transmission request: data frame
+30606909-30606932 CAN: Fields: Reserved bit 1: 0
+30606933-30606956 CAN: Fields: Reserved bit 0: 0
+30606981-30607076 CAN: Fields: Data length code: 4
+30607077-30607292 CAN: Fields: Data byte 0: 0x00
+30607317-30607532 CAN: Fields: Data byte 1: 0x00
+30607533-30607749 CAN: Fields: Data byte 2: 0x12
+30607750-30607965 CAN: Fields: Data byte 3: 0x00
+30607966-30608325 CAN: Fields: CRC-15 sequence: 0x646d
+30608326-30608349 CAN: Fields: CRC delimiter: 1
+30608350-30608373 CAN: Fields: ACK slot: ACK
+30608374-30608397 CAN: Fields: ACK delimiter: 1
+30608398-30608565 CAN: Fields: End of frame
+30614070-30614093 CAN: Fields: Start of frame
+30614094-30614357 CAN: Fields: Identifier: 882 (0x372)
+30614358-30614381 CAN: Fields: Substitute remote request: 1
+30614382-30614405 CAN: Fields: Identifier extension bit: extended frame
+30614406-30614886 CAN: Fields: Extended Identifier: 131076 (0x20004)
+30614406-30614886 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+30614887-30614910 CAN: Fields: Remote transmission request: data frame
+30614911-30614934 CAN: Fields: Reserved bit 1: 0
+30614935-30614958 CAN: Fields: Reserved bit 0: 0
+30614983-30615078 CAN: Fields: Data length code: 2
+30615079-30615294 CAN: Fields: Data byte 0: 0x00
+30615295-30615511 CAN: Fields: Data byte 1: 0xfe
+30615512-30615895 CAN: Fields: CRC-15 sequence: 0x0d83
+30615896-30615919 CAN: Fields: CRC delimiter: 1
+30615921-30615944 CAN: Fields: ACK slot: ACK
+30615945-30615968 CAN: Fields: ACK delimiter: 1
+30615969-30616136 CAN: Fields: End of frame
+31800758-31800781 CAN: Fields: Start of frame
+31800782-31801045 CAN: Fields: Identifier: 836 (0x344)
+31801046-31801069 CAN: Fields: Substitute remote request: 1
+31801070-31801093 CAN: Fields: Identifier extension bit: extended frame
+31801094-31801574 CAN: Fields: Extended Identifier: 65540 (0x10004)
+31801094-31801574 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+31801575-31801598 CAN: Fields: Remote transmission request: data frame
+31801599-31801622 CAN: Fields: Reserved bit 1: 0
+31801623-31801646 CAN: Fields: Reserved bit 0: 0
+31801671-31801766 CAN: Fields: Data length code: 7
+31801767-31801982 CAN: Fields: Data byte 0: 0x00
+31801983-31802222 CAN: Fields: Data byte 1: 0x00
+31802223-31802438 CAN: Fields: Data byte 2: 0x03
+31802439-31802631 CAN: Fields: Data byte 3: 0xd1
+31802632-31802847 CAN: Fields: Data byte 4: 0x00
+31802848-31803087 CAN: Fields: Data byte 5: 0x00
+31803088-31803303 CAN: Fields: Data byte 6: 0x00
+31803304-31803664 CAN: Fields: CRC-15 sequence: 0x42ab
+31803665-31803688 CAN: Fields: CRC delimiter: 1
+31803691-31803714 CAN: Fields: ACK slot: ACK
+31803715-31803738 CAN: Fields: ACK delimiter: 1
+31803739-31803906 CAN: Fields: End of frame
+31807608-31807631 CAN: Fields: Start of frame
+31807632-31807919 CAN: Fields: Identifier: 833 (0x341)
+31807920-31807943 CAN: Fields: Substitute remote request: 1
+31807944-31807967 CAN: Fields: Identifier extension bit: extended frame
+31807969-31808472 CAN: Fields: Extended Identifier: 4 (0x4)
+31807969-31808472 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+31808473-31808496 CAN: Fields: Remote transmission request: data frame
+31808497-31808520 CAN: Fields: Reserved bit 1: 0
+31808521-31808544 CAN: Fields: Reserved bit 0: 0
+31808569-31808664 CAN: Fields: Data length code: 4
+31808665-31808880 CAN: Fields: Data byte 0: 0x00
+31808906-31809121 CAN: Fields: Data byte 1: 0x00
+31809122-31809337 CAN: Fields: Data byte 2: 0x12
+31809338-31809553 CAN: Fields: Data byte 3: 0x00
+31809554-31809914 CAN: Fields: CRC-15 sequence: 0x646d
+31809915-31809938 CAN: Fields: CRC delimiter: 1
+31809938-31809961 CAN: Fields: ACK slot: ACK
+31809962-31809985 CAN: Fields: ACK delimiter: 1
+31809986-31810153 CAN: Fields: End of frame
+31815658-31815681 CAN: Fields: Start of frame
+31815682-31815945 CAN: Fields: Identifier: 882 (0x372)
+31815946-31815969 CAN: Fields: Substitute remote request: 1
+31815970-31815993 CAN: Fields: Identifier extension bit: extended frame
+31815994-31816473 CAN: Fields: Extended Identifier: 131076 (0x20004)
+31815994-31816473 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+31816474-31816497 CAN: Fields: Remote transmission request: data frame
+31816498-31816521 CAN: Fields: Reserved bit 1: 0
+31816522-31816545 CAN: Fields: Reserved bit 0: 0
+31816571-31816666 CAN: Fields: Data length code: 2
+31816667-31816882 CAN: Fields: Data byte 0: 0x00
+31816883-31817098 CAN: Fields: Data byte 1: 0xfe
+31817099-31817482 CAN: Fields: CRC-15 sequence: 0x0d83
+31817483-31817506 CAN: Fields: CRC delimiter: 1
+31817509-31817532 CAN: Fields: ACK slot: ACK
+31817533-31817556 CAN: Fields: ACK delimiter: 1
+31817557-31817724 CAN: Fields: End of frame
+32639234-32639257 CAN: Fields: Start of frame
+32639258-32639544 CAN: Fields: Identifier: 832 (0x340)
+32639545-32639568 CAN: Fields: Substitute remote request: 1
+32639569-32639592 CAN: Fields: Identifier extension bit: extended frame
+32639593-32640096 CAN: Fields: Extended Identifier: 1 (0x1)
+32639593-32640096 CAN: Fields: Full Identifier: 218103809 (0xd000001)
+32640097-32640120 CAN: Fields: Remote transmission request: data frame
+32640121-32640144 CAN: Fields: Reserved bit 1: 0
+32640145-32640168 CAN: Fields: Reserved bit 0: 0
+32640169-32640288 CAN: Fields: Data length code: 3
+32640289-32640503 CAN: Fields: Data byte 0: 0x01
+32640504-32640719 CAN: Fields: Data byte 1: 0x00
+32640720-32640911 CAN: Fields: Data byte 2: 0x84
+32640912-32641271 CAN: Fields: CRC-15 sequence: 0x673a
+32641272-32641295 CAN: Fields: CRC delimiter: 1
+32641297-32641320 CAN: Fields: ACK slot: ACK
+32641321-32641344 CAN: Fields: ACK delimiter: 1
+32641345-32641512 CAN: Fields: End of frame
+33002266-33002289 CAN: Fields: Start of frame
+33002290-33002553 CAN: Fields: Identifier: 836 (0x344)
+33002554-33002577 CAN: Fields: Substitute remote request: 1
+33002578-33002601 CAN: Fields: Identifier extension bit: extended frame
+33002602-33003082 CAN: Fields: Extended Identifier: 65540 (0x10004)
+33002602-33003082 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+33003083-33003106 CAN: Fields: Remote transmission request: data frame
+33003107-33003130 CAN: Fields: Reserved bit 1: 0
+33003131-33003154 CAN: Fields: Reserved bit 0: 0
+33003179-33003274 CAN: Fields: Data length code: 7
+33003275-33003490 CAN: Fields: Data byte 0: 0x00
+33003491-33003731 CAN: Fields: Data byte 1: 0x00
+33003732-33003947 CAN: Fields: Data byte 2: 0x03
+33003948-33004139 CAN: Fields: Data byte 3: 0xd1
+33004140-33004355 CAN: Fields: Data byte 4: 0x00
+33004356-33004596 CAN: Fields: Data byte 5: 0x00
+33004597-33004812 CAN: Fields: Data byte 6: 0x00
+33004813-33005172 CAN: Fields: CRC-15 sequence: 0x42ab
+33005173-33005196 CAN: Fields: CRC delimiter: 1
+33005197-33005220 CAN: Fields: ACK slot: ACK
+33005221-33005244 CAN: Fields: ACK delimiter: 1
+33005245-33005412 CAN: Fields: End of frame
+33009114-33009137 CAN: Fields: Start of frame
+33009138-33009425 CAN: Fields: Identifier: 833 (0x341)
+33009426-33009449 CAN: Fields: Substitute remote request: 1
+33009450-33009473 CAN: Fields: Identifier extension bit: extended frame
+33009475-33009978 CAN: Fields: Extended Identifier: 4 (0x4)
+33009475-33009978 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+33009979-33010002 CAN: Fields: Remote transmission request: data frame
+33010003-33010026 CAN: Fields: Reserved bit 1: 0
+33010027-33010050 CAN: Fields: Reserved bit 0: 0
+33010075-33010170 CAN: Fields: Data length code: 4
+33010171-33010387 CAN: Fields: Data byte 0: 0x00
+33010412-33010627 CAN: Fields: Data byte 1: 0x00
+33010628-33010843 CAN: Fields: Data byte 2: 0x12
+33010844-33011059 CAN: Fields: Data byte 3: 0x00
+33011060-33011420 CAN: Fields: CRC-15 sequence: 0x646d
+33011421-33011444 CAN: Fields: CRC delimiter: 1
+33011447-33011470 CAN: Fields: ACK slot: ACK
+33011471-33011494 CAN: Fields: ACK delimiter: 1
+33011495-33011662 CAN: Fields: End of frame
+33017168-33017191 CAN: Fields: Start of frame
+33017192-33017455 CAN: Fields: Identifier: 882 (0x372)
+33017456-33017479 CAN: Fields: Substitute remote request: 1
+33017480-33017503 CAN: Fields: Identifier extension bit: extended frame
+33017504-33017983 CAN: Fields: Extended Identifier: 131076 (0x20004)
+33017504-33017983 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+33017984-33018007 CAN: Fields: Remote transmission request: data frame
+33018008-33018031 CAN: Fields: Reserved bit 1: 0
+33018032-33018055 CAN: Fields: Reserved bit 0: 0
+33018081-33018176 CAN: Fields: Data length code: 2
+33018177-33018392 CAN: Fields: Data byte 0: 0x00
+33018393-33018608 CAN: Fields: Data byte 1: 0xfe
+33018609-33018993 CAN: Fields: CRC-15 sequence: 0x0d83
+33018994-33019017 CAN: Fields: CRC delimiter: 1
+33019019-33019042 CAN: Fields: ACK slot: ACK
+33019043-33019066 CAN: Fields: ACK delimiter: 1
+33019067-33019234 CAN: Fields: End of frame
+34203744-34203767 CAN: Fields: Start of frame
+34203768-34204031 CAN: Fields: Identifier: 836 (0x344)
+34204032-34204055 CAN: Fields: Substitute remote request: 1
+34204056-34204079 CAN: Fields: Identifier extension bit: extended frame
+34204080-34204560 CAN: Fields: Extended Identifier: 65540 (0x10004)
+34204080-34204560 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+34204561-34204584 CAN: Fields: Remote transmission request: data frame
+34204585-34204608 CAN: Fields: Reserved bit 1: 0
+34204609-34204632 CAN: Fields: Reserved bit 0: 0
+34204657-34204752 CAN: Fields: Data length code: 7
+34204753-34204968 CAN: Fields: Data byte 0: 0x00
+34204969-34205209 CAN: Fields: Data byte 1: 0x00
+34205210-34205425 CAN: Fields: Data byte 2: 0x03
+34205426-34205617 CAN: Fields: Data byte 3: 0xd1
+34205618-34205833 CAN: Fields: Data byte 4: 0x00
+34205834-34206074 CAN: Fields: Data byte 5: 0x00
+34206075-34206290 CAN: Fields: Data byte 6: 0x00
+34206291-34206650 CAN: Fields: CRC-15 sequence: 0x42ab
+34206651-34206674 CAN: Fields: CRC delimiter: 1
+34206677-34206700 CAN: Fields: ACK slot: ACK
+34206701-34206724 CAN: Fields: ACK delimiter: 1
+34206725-34206892 CAN: Fields: End of frame
+34210593-34210616 CAN: Fields: Start of frame
+34210617-34210904 CAN: Fields: Identifier: 833 (0x341)
+34210905-34210928 CAN: Fields: Substitute remote request: 1
+34210929-34210952 CAN: Fields: Identifier extension bit: extended frame
+34210953-34211457 CAN: Fields: Extended Identifier: 4 (0x4)
+34210953-34211457 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+34211458-34211481 CAN: Fields: Remote transmission request: data frame
+34211482-34211505 CAN: Fields: Reserved bit 1: 0
+34211506-34211529 CAN: Fields: Reserved bit 0: 0
+34211554-34211649 CAN: Fields: Data length code: 4
+34211650-34211865 CAN: Fields: Data byte 0: 0x00
+34211890-34212106 CAN: Fields: Data byte 1: 0x00
+34212107-34212322 CAN: Fields: Data byte 2: 0x12
+34212323-34212538 CAN: Fields: Data byte 3: 0x00
+34212539-34212899 CAN: Fields: CRC-15 sequence: 0x646d
+34212900-34212923 CAN: Fields: CRC delimiter: 1
+34212923-34212946 CAN: Fields: ACK slot: ACK
+34212947-34212970 CAN: Fields: ACK delimiter: 1
+34212971-34213138 CAN: Fields: End of frame
+34218643-34218666 CAN: Fields: Start of frame
+34218667-34218930 CAN: Fields: Identifier: 882 (0x372)
+34218931-34218954 CAN: Fields: Substitute remote request: 1
+34218955-34218978 CAN: Fields: Identifier extension bit: extended frame
+34218979-34219458 CAN: Fields: Extended Identifier: 131076 (0x20004)
+34218979-34219458 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+34219459-34219482 CAN: Fields: Remote transmission request: data frame
+34219483-34219506 CAN: Fields: Reserved bit 1: 0
+34219507-34219530 CAN: Fields: Reserved bit 0: 0
+34219556-34219651 CAN: Fields: Data length code: 2
+34219652-34219867 CAN: Fields: Data byte 0: 0x00
+34219868-34220083 CAN: Fields: Data byte 1: 0xfe
+34220084-34220468 CAN: Fields: CRC-15 sequence: 0x0d83
+34220469-34220492 CAN: Fields: CRC delimiter: 1
+34220492-34220515 CAN: Fields: ACK slot: ACK
+34220516-34220539 CAN: Fields: ACK delimiter: 1
+34220540-34220707 CAN: Fields: End of frame
+35405274-35405297 CAN: Fields: Start of frame
+35405298-35405561 CAN: Fields: Identifier: 836 (0x344)
+35405562-35405585 CAN: Fields: Substitute remote request: 1
+35405586-35405609 CAN: Fields: Identifier extension bit: extended frame
+35405610-35406090 CAN: Fields: Extended Identifier: 65540 (0x10004)
+35405610-35406090 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+35406091-35406114 CAN: Fields: Remote transmission request: data frame
+35406115-35406138 CAN: Fields: Reserved bit 1: 0
+35406139-35406162 CAN: Fields: Reserved bit 0: 0
+35406187-35406282 CAN: Fields: Data length code: 7
+35406283-35406498 CAN: Fields: Data byte 0: 0x00
+35406499-35406738 CAN: Fields: Data byte 1: 0x00
+35406739-35406955 CAN: Fields: Data byte 2: 0x03
+35406956-35407147 CAN: Fields: Data byte 3: 0xd1
+35407148-35407363 CAN: Fields: Data byte 4: 0x00
+35407364-35407604 CAN: Fields: Data byte 5: 0x00
+35407605-35407820 CAN: Fields: Data byte 6: 0x00
+35407821-35408180 CAN: Fields: CRC-15 sequence: 0x42ab
+35408181-35408204 CAN: Fields: CRC delimiter: 1
+35408205-35408228 CAN: Fields: ACK slot: ACK
+35408229-35408252 CAN: Fields: ACK delimiter: 1
+35408253-35408420 CAN: Fields: End of frame
+35412122-35412145 CAN: Fields: Start of frame
+35412146-35412433 CAN: Fields: Identifier: 833 (0x341)
+35412434-35412457 CAN: Fields: Substitute remote request: 1
+35412458-35412481 CAN: Fields: Identifier extension bit: extended frame
+35412483-35412986 CAN: Fields: Extended Identifier: 4 (0x4)
+35412483-35412986 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+35412987-35413010 CAN: Fields: Remote transmission request: data frame
+35413011-35413034 CAN: Fields: Reserved bit 1: 0
+35413035-35413058 CAN: Fields: Reserved bit 0: 0
+35413083-35413178 CAN: Fields: Data length code: 4
+35413179-35413395 CAN: Fields: Data byte 0: 0x00
+35413420-35413635 CAN: Fields: Data byte 1: 0x00
+35413636-35413851 CAN: Fields: Data byte 2: 0x12
+35413852-35414067 CAN: Fields: Data byte 3: 0x00
+35414068-35414428 CAN: Fields: CRC-15 sequence: 0x646d
+35414429-35414452 CAN: Fields: CRC delimiter: 1
+35414453-35414476 CAN: Fields: ACK slot: ACK
+35414477-35414500 CAN: Fields: ACK delimiter: 1
+35414501-35414668 CAN: Fields: End of frame
+35420148-35420171 CAN: Fields: Start of frame
+35420172-35420435 CAN: Fields: Identifier: 882 (0x372)
+35420436-35420459 CAN: Fields: Substitute remote request: 1
+35420460-35420483 CAN: Fields: Identifier extension bit: extended frame
+35420484-35420964 CAN: Fields: Extended Identifier: 131076 (0x20004)
+35420484-35420964 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+35420965-35420988 CAN: Fields: Remote transmission request: data frame
+35420989-35421012 CAN: Fields: Reserved bit 1: 0
+35421013-35421036 CAN: Fields: Reserved bit 0: 0
+35421061-35421156 CAN: Fields: Data length code: 2
+35421157-35421372 CAN: Fields: Data byte 0: 0x00
+35421373-35421589 CAN: Fields: Data byte 1: 0xfe
+35421590-35421973 CAN: Fields: CRC-15 sequence: 0x0d83
+35421974-35421997 CAN: Fields: CRC delimiter: 1
+35421999-35422022 CAN: Fields: ACK slot: ACK
+35422023-35422046 CAN: Fields: ACK delimiter: 1
+35422047-35422214 CAN: Fields: End of frame
+36606842-36606865 CAN: Fields: Start of frame
+36606866-36607129 CAN: Fields: Identifier: 836 (0x344)
+36607130-36607153 CAN: Fields: Substitute remote request: 1
+36607154-36607177 CAN: Fields: Identifier extension bit: extended frame
+36607179-36607658 CAN: Fields: Extended Identifier: 65540 (0x10004)
+36607179-36607658 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+36607659-36607682 CAN: Fields: Remote transmission request: data frame
+36607683-36607706 CAN: Fields: Reserved bit 1: 0
+36607707-36607730 CAN: Fields: Reserved bit 0: 0
+36607755-36607850 CAN: Fields: Data length code: 7
+36607851-36608066 CAN: Fields: Data byte 0: 0x00
+36608067-36608307 CAN: Fields: Data byte 1: 0x00
+36608308-36608523 CAN: Fields: Data byte 2: 0x03
+36608524-36608715 CAN: Fields: Data byte 3: 0xd1
+36608716-36608931 CAN: Fields: Data byte 4: 0x00
+36608932-36609172 CAN: Fields: Data byte 5: 0x00
+36609173-36609388 CAN: Fields: Data byte 6: 0x00
+36609389-36609748 CAN: Fields: CRC-15 sequence: 0x42ab
+36609749-36609772 CAN: Fields: CRC delimiter: 1
+36609774-36609797 CAN: Fields: ACK slot: ACK
+36609798-36609821 CAN: Fields: ACK delimiter: 1
+36609822-36609989 CAN: Fields: End of frame
+36613691-36613714 CAN: Fields: Start of frame
+36613715-36614002 CAN: Fields: Identifier: 833 (0x341)
+36614003-36614026 CAN: Fields: Substitute remote request: 1
+36614027-36614050 CAN: Fields: Identifier extension bit: extended frame
+36614051-36614555 CAN: Fields: Extended Identifier: 4 (0x4)
+36614051-36614555 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+36614556-36614579 CAN: Fields: Remote transmission request: data frame
+36614580-36614603 CAN: Fields: Reserved bit 1: 0
+36614604-36614627 CAN: Fields: Reserved bit 0: 0
+36614652-36614747 CAN: Fields: Data length code: 4
+36614748-36614963 CAN: Fields: Data byte 0: 0x00
+36614988-36615203 CAN: Fields: Data byte 1: 0x00
+36615204-36615420 CAN: Fields: Data byte 2: 0x12
+36615421-36615636 CAN: Fields: Data byte 3: 0x00
+36615637-36615996 CAN: Fields: CRC-15 sequence: 0x646d
+36615997-36616020 CAN: Fields: CRC delimiter: 1
+36616021-36616044 CAN: Fields: ACK slot: ACK
+36616045-36616068 CAN: Fields: ACK delimiter: 1
+36616069-36616236 CAN: Fields: End of frame
+36621741-36621764 CAN: Fields: Start of frame
+36621765-36622028 CAN: Fields: Identifier: 882 (0x372)
+36622029-36622052 CAN: Fields: Substitute remote request: 1
+36622053-36622076 CAN: Fields: Identifier extension bit: extended frame
+36622077-36622557 CAN: Fields: Extended Identifier: 131076 (0x20004)
+36622077-36622557 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+36622558-36622581 CAN: Fields: Remote transmission request: data frame
+36622582-36622605 CAN: Fields: Reserved bit 1: 0
+36622606-36622629 CAN: Fields: Reserved bit 0: 0
+36622654-36622749 CAN: Fields: Data length code: 2
+36622750-36622965 CAN: Fields: Data byte 0: 0x00
+36622966-36623181 CAN: Fields: Data byte 1: 0xfe
+36623182-36623566 CAN: Fields: CRC-15 sequence: 0x0d83
+36623567-36623590 CAN: Fields: CRC delimiter: 1
+36623592-36623615 CAN: Fields: ACK slot: ACK
+36623616-36623639 CAN: Fields: ACK delimiter: 1
+36623640-36623807 CAN: Fields: End of frame
+37808360-37808383 CAN: Fields: Start of frame
+37808384-37808647 CAN: Fields: Identifier: 836 (0x344)
+37808648-37808671 CAN: Fields: Substitute remote request: 1
+37808672-37808695 CAN: Fields: Identifier extension bit: extended frame
+37808696-37809176 CAN: Fields: Extended Identifier: 65540 (0x10004)
+37808696-37809176 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+37809177-37809200 CAN: Fields: Remote transmission request: data frame
+37809201-37809224 CAN: Fields: Reserved bit 1: 0
+37809225-37809248 CAN: Fields: Reserved bit 0: 0
+37809273-37809368 CAN: Fields: Data length code: 7
+37809369-37809584 CAN: Fields: Data byte 0: 0x00
+37809585-37809825 CAN: Fields: Data byte 1: 0x00
+37809826-37810041 CAN: Fields: Data byte 2: 0x03
+37810042-37810233 CAN: Fields: Data byte 3: 0xd1
+37810234-37810449 CAN: Fields: Data byte 4: 0x00
+37810450-37810690 CAN: Fields: Data byte 5: 0x00
+37810691-37810906 CAN: Fields: Data byte 6: 0x00
+37810907-37811266 CAN: Fields: CRC-15 sequence: 0x42ab
+37811267-37811290 CAN: Fields: CRC delimiter: 1
+37811291-37811314 CAN: Fields: ACK slot: ACK
+37811315-37811338 CAN: Fields: ACK delimiter: 1
+37811339-37811506 CAN: Fields: End of frame
+37815208-37815231 CAN: Fields: Start of frame
+37815232-37815520 CAN: Fields: Identifier: 833 (0x341)
+37815521-37815544 CAN: Fields: Substitute remote request: 1
+37815545-37815568 CAN: Fields: Identifier extension bit: extended frame
+37815569-37816072 CAN: Fields: Extended Identifier: 4 (0x4)
+37815569-37816072 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+37816073-37816096 CAN: Fields: Remote transmission request: data frame
+37816097-37816120 CAN: Fields: Reserved bit 1: 0
+37816121-37816144 CAN: Fields: Reserved bit 0: 0
+37816170-37816265 CAN: Fields: Data length code: 4
+37816266-37816481 CAN: Fields: Data byte 0: 0x00
+37816506-37816721 CAN: Fields: Data byte 1: 0x00
+37816722-37816937 CAN: Fields: Data byte 2: 0x12
+37816938-37817154 CAN: Fields: Data byte 3: 0x00
+37817155-37817514 CAN: Fields: CRC-15 sequence: 0x646d
+37817515-37817538 CAN: Fields: CRC delimiter: 1
+37817539-37817562 CAN: Fields: ACK slot: ACK
+37817563-37817586 CAN: Fields: ACK delimiter: 1
+37817587-37817754 CAN: Fields: End of frame
+37823234-37823257 CAN: Fields: Start of frame
+37823258-37823521 CAN: Fields: Identifier: 882 (0x372)
+37823522-37823545 CAN: Fields: Substitute remote request: 1
+37823546-37823569 CAN: Fields: Identifier extension bit: extended frame
+37823570-37824050 CAN: Fields: Extended Identifier: 131076 (0x20004)
+37823570-37824050 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+37824051-37824074 CAN: Fields: Remote transmission request: data frame
+37824075-37824098 CAN: Fields: Reserved bit 1: 0
+37824099-37824122 CAN: Fields: Reserved bit 0: 0
+37824147-37824242 CAN: Fields: Data length code: 2
+37824243-37824458 CAN: Fields: Data byte 0: 0x00
+37824459-37824674 CAN: Fields: Data byte 1: 0xfe
+37824675-37825059 CAN: Fields: CRC-15 sequence: 0x0d83
+37825060-37825083 CAN: Fields: CRC delimiter: 1
+37825085-37825108 CAN: Fields: ACK slot: ACK
+37825109-37825132 CAN: Fields: ACK delimiter: 1
+37825133-37825300 CAN: Fields: End of frame
+39009902-39009925 CAN: Fields: Start of frame
+39009926-39010190 CAN: Fields: Identifier: 836 (0x344)
+39010191-39010214 CAN: Fields: Substitute remote request: 1
+39010215-39010238 CAN: Fields: Identifier extension bit: extended frame
+39010239-39010718 CAN: Fields: Extended Identifier: 65540 (0x10004)
+39010239-39010718 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+39010719-39010742 CAN: Fields: Remote transmission request: data frame
+39010743-39010766 CAN: Fields: Reserved bit 1: 0
+39010767-39010790 CAN: Fields: Reserved bit 0: 0
+39010815-39010910 CAN: Fields: Data length code: 7
+39010912-39011127 CAN: Fields: Data byte 0: 0x00
+39011128-39011367 CAN: Fields: Data byte 1: 0x00
+39011368-39011583 CAN: Fields: Data byte 2: 0x03
+39011584-39011775 CAN: Fields: Data byte 3: 0xd1
+39011777-39011992 CAN: Fields: Data byte 4: 0x00
+39011993-39012232 CAN: Fields: Data byte 5: 0x00
+39012233-39012448 CAN: Fields: Data byte 6: 0x00
+39012449-39012809 CAN: Fields: CRC-15 sequence: 0x42ab
+39012810-39012833 CAN: Fields: CRC delimiter: 1
+39012833-39012856 CAN: Fields: ACK slot: ACK
+39012857-39012880 CAN: Fields: ACK delimiter: 1
+39012881-39013048 CAN: Fields: End of frame
+39016751-39016774 CAN: Fields: Start of frame
+39016775-39017062 CAN: Fields: Identifier: 833 (0x341)
+39017063-39017086 CAN: Fields: Substitute remote request: 1
+39017087-39017110 CAN: Fields: Identifier extension bit: extended frame
+39017111-39017615 CAN: Fields: Extended Identifier: 4 (0x4)
+39017111-39017615 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+39017616-39017639 CAN: Fields: Remote transmission request: data frame
+39017640-39017663 CAN: Fields: Reserved bit 1: 0
+39017664-39017687 CAN: Fields: Reserved bit 0: 0
+39017712-39017807 CAN: Fields: Data length code: 4
+39017808-39018023 CAN: Fields: Data byte 0: 0x00
+39018048-39018264 CAN: Fields: Data byte 1: 0x00
+39018265-39018480 CAN: Fields: Data byte 2: 0x12
+39018481-39018696 CAN: Fields: Data byte 3: 0x00
+39018697-39019057 CAN: Fields: CRC-15 sequence: 0x646d
+39019058-39019081 CAN: Fields: CRC delimiter: 1
+39019083-39019106 CAN: Fields: ACK slot: ACK
+39019107-39019130 CAN: Fields: ACK delimiter: 1
+39019131-39019298 CAN: Fields: End of frame
+39024777-39024800 CAN: Fields: Start of frame
+39024801-39025064 CAN: Fields: Identifier: 882 (0x372)
+39025065-39025088 CAN: Fields: Substitute remote request: 1
+39025089-39025112 CAN: Fields: Identifier extension bit: extended frame
+39025113-39025593 CAN: Fields: Extended Identifier: 131076 (0x20004)
+39025113-39025593 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+39025594-39025617 CAN: Fields: Remote transmission request: data frame
+39025618-39025641 CAN: Fields: Reserved bit 1: 0
+39025642-39025665 CAN: Fields: Reserved bit 0: 0
+39025690-39025785 CAN: Fields: Data length code: 2
+39025786-39026001 CAN: Fields: Data byte 0: 0x00
+39026002-39026218 CAN: Fields: Data byte 1: 0xfe
+39026219-39026602 CAN: Fields: CRC-15 sequence: 0x0d83
+39026603-39026626 CAN: Fields: CRC delimiter: 1
+39026629-39026652 CAN: Fields: ACK slot: ACK
+39026653-39026676 CAN: Fields: ACK delimiter: 1
+39026677-39026844 CAN: Fields: End of frame
+40211464-40211487 CAN: Fields: Start of frame
+40211488-40211751 CAN: Fields: Identifier: 836 (0x344)
+40211752-40211775 CAN: Fields: Substitute remote request: 1
+40211776-40211799 CAN: Fields: Identifier extension bit: extended frame
+40211801-40212280 CAN: Fields: Extended Identifier: 65540 (0x10004)
+40211801-40212280 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+40212281-40212304 CAN: Fields: Remote transmission request: data frame
+40212305-40212328 CAN: Fields: Reserved bit 1: 0
+40212329-40212352 CAN: Fields: Reserved bit 0: 0
+40212377-40212472 CAN: Fields: Data length code: 7
+40212473-40212689 CAN: Fields: Data byte 0: 0x00
+40212690-40212929 CAN: Fields: Data byte 1: 0x00
+40212930-40213145 CAN: Fields: Data byte 2: 0x03
+40213146-40213337 CAN: Fields: Data byte 3: 0xd1
+40213338-40213554 CAN: Fields: Data byte 4: 0x00
+40213555-40213794 CAN: Fields: Data byte 5: 0x00
+40213795-40214010 CAN: Fields: Data byte 6: 0x00
+40214011-40214370 CAN: Fields: CRC-15 sequence: 0x42ab
+40214371-40214394 CAN: Fields: CRC delimiter: 1
+40214396-40214419 CAN: Fields: ACK slot: ACK
+40214420-40214443 CAN: Fields: ACK delimiter: 1
+40214444-40214611 CAN: Fields: End of frame
+40218313-40218336 CAN: Fields: Start of frame
+40218337-40218624 CAN: Fields: Identifier: 833 (0x341)
+40218625-40218648 CAN: Fields: Substitute remote request: 1
+40218649-40218672 CAN: Fields: Identifier extension bit: extended frame
+40218673-40219177 CAN: Fields: Extended Identifier: 4 (0x4)
+40218673-40219177 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+40219178-40219201 CAN: Fields: Remote transmission request: data frame
+40219202-40219225 CAN: Fields: Reserved bit 1: 0
+40219226-40219249 CAN: Fields: Reserved bit 0: 0
+40219274-40219369 CAN: Fields: Data length code: 4
+40219370-40219585 CAN: Fields: Data byte 0: 0x00
+40219610-40219826 CAN: Fields: Data byte 1: 0x00
+40219827-40220042 CAN: Fields: Data byte 2: 0x12
+40220043-40220258 CAN: Fields: Data byte 3: 0x00
+40220259-40220619 CAN: Fields: CRC-15 sequence: 0x646d
+40220620-40220643 CAN: Fields: CRC delimiter: 1
+40220646-40220669 CAN: Fields: ACK slot: ACK
+40220670-40220693 CAN: Fields: ACK delimiter: 1
+40220694-40220861 CAN: Fields: End of frame
+40226342-40226365 CAN: Fields: Start of frame
+40226366-40226629 CAN: Fields: Identifier: 882 (0x372)
+40226630-40226653 CAN: Fields: Substitute remote request: 1
+40226654-40226677 CAN: Fields: Identifier extension bit: extended frame
+40226678-40227158 CAN: Fields: Extended Identifier: 131076 (0x20004)
+40226678-40227158 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+40227159-40227182 CAN: Fields: Remote transmission request: data frame
+40227183-40227206 CAN: Fields: Reserved bit 1: 0
+40227207-40227230 CAN: Fields: Reserved bit 0: 0
+40227255-40227350 CAN: Fields: Data length code: 2
+40227351-40227566 CAN: Fields: Data byte 0: 0x00
+40227567-40227783 CAN: Fields: Data byte 1: 0xfe
+40227784-40228167 CAN: Fields: CRC-15 sequence: 0x0d83
+40228168-40228191 CAN: Fields: CRC delimiter: 1
+40228192-40228215 CAN: Fields: ACK slot: ACK
+40228216-40228239 CAN: Fields: ACK delimiter: 1
+40228240-40228407 CAN: Fields: End of frame
+41413059-41413082 CAN: Fields: Start of frame
+41413083-41413346 CAN: Fields: Identifier: 836 (0x344)
+41413347-41413370 CAN: Fields: Substitute remote request: 1
+41413371-41413394 CAN: Fields: Identifier extension bit: extended frame
+41413395-41413875 CAN: Fields: Extended Identifier: 65540 (0x10004)
+41413395-41413875 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+41413876-41413899 CAN: Fields: Remote transmission request: data frame
+41413900-41413923 CAN: Fields: Reserved bit 1: 0
+41413924-41413947 CAN: Fields: Reserved bit 0: 0
+41413972-41414067 CAN: Fields: Data length code: 7
+41414068-41414283 CAN: Fields: Data byte 0: 0x00
+41414284-41414524 CAN: Fields: Data byte 1: 0x00
+41414525-41414740 CAN: Fields: Data byte 2: 0x03
+41414741-41414932 CAN: Fields: Data byte 3: 0xd1
+41414933-41415148 CAN: Fields: Data byte 4: 0x00
+41415149-41415389 CAN: Fields: Data byte 5: 0x00
+41415390-41415605 CAN: Fields: Data byte 6: 0x00
+41415606-41415965 CAN: Fields: CRC-15 sequence: 0x42ab
+41415966-41415989 CAN: Fields: CRC delimiter: 1
+41415992-41416015 CAN: Fields: ACK slot: ACK
+41416016-41416039 CAN: Fields: ACK delimiter: 1
+41416040-41416207 CAN: Fields: End of frame
+41419910-41419933 CAN: Fields: Start of frame
+41419934-41420222 CAN: Fields: Identifier: 833 (0x341)
+41420223-41420246 CAN: Fields: Substitute remote request: 1
+41420247-41420270 CAN: Fields: Identifier extension bit: extended frame
+41420271-41420774 CAN: Fields: Extended Identifier: 4 (0x4)
+41420271-41420774 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+41420775-41420798 CAN: Fields: Remote transmission request: data frame
+41420799-41420822 CAN: Fields: Reserved bit 1: 0
+41420823-41420846 CAN: Fields: Reserved bit 0: 0
+41420871-41420967 CAN: Fields: Data length code: 4
+41420968-41421183 CAN: Fields: Data byte 0: 0x00
+41421208-41421423 CAN: Fields: Data byte 1: 0x00
+41421424-41421639 CAN: Fields: Data byte 2: 0x12
+41421640-41421855 CAN: Fields: Data byte 3: 0x00
+41421856-41422216 CAN: Fields: CRC-15 sequence: 0x646d
+41422217-41422240 CAN: Fields: CRC delimiter: 1
+41422243-41422266 CAN: Fields: ACK slot: ACK
+41422267-41422290 CAN: Fields: ACK delimiter: 1
+41422291-41422458 CAN: Fields: End of frame
+41427939-41427962 CAN: Fields: Start of frame
+41427963-41428226 CAN: Fields: Identifier: 882 (0x372)
+41428227-41428250 CAN: Fields: Substitute remote request: 1
+41428251-41428274 CAN: Fields: Identifier extension bit: extended frame
+41428275-41428755 CAN: Fields: Extended Identifier: 131076 (0x20004)
+41428275-41428755 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+41428756-41428779 CAN: Fields: Remote transmission request: data frame
+41428780-41428803 CAN: Fields: Reserved bit 1: 0
+41428804-41428827 CAN: Fields: Reserved bit 0: 0
+41428852-41428947 CAN: Fields: Data length code: 2
+41428948-41429163 CAN: Fields: Data byte 0: 0x00
+41429164-41429380 CAN: Fields: Data byte 1: 0xfe
+41429381-41429764 CAN: Fields: CRC-15 sequence: 0x0d83
+41429765-41429788 CAN: Fields: CRC delimiter: 1
+41429789-41429812 CAN: Fields: ACK slot: ACK
+41429813-41429836 CAN: Fields: ACK delimiter: 1
+41429837-41430004 CAN: Fields: End of frame
+41701440-41701463 CAN: Fields: Start of frame
+41701464-41701752 CAN: Fields: Identifier: 832 (0x340)
+41701753-41701776 CAN: Fields: Substitute remote request: 1
+41701777-41701800 CAN: Fields: Identifier extension bit: extended frame
+41701801-41702280 CAN: Fields: Extended Identifier: 131076 (0x20004)
+41701801-41702280 CAN: Fields: Full Identifier: 218234884 (0xd020004)
+41702281-41702304 CAN: Fields: Remote transmission request: data frame
+41702305-41702328 CAN: Fields: Reserved bit 1: 0
+41702329-41702352 CAN: Fields: Reserved bit 0: 0
+41702378-41702473 CAN: Fields: Data length code: 3
+41702474-41702689 CAN: Fields: Data byte 0: 0x02
+41702690-41702905 CAN: Fields: Data byte 1: 0x01
+41702906-41703122 CAN: Fields: Data byte 2: 0x01
+41703123-41703482 CAN: Fields: CRC-15 sequence: 0x0630
+41703483-41703506 CAN: Fields: CRC delimiter: 1
+41703506-41703529 CAN: Fields: ACK slot: ACK
+41703530-41703553 CAN: Fields: ACK delimiter: 1
+41703554-41703721 CAN: Fields: End of frame
+42001612-42001635 CAN: Fields: Start of frame
+42001636-42001899 CAN: Fields: Identifier: 882 (0x372)
+42001900-42001923 CAN: Fields: Substitute remote request: 1
+42001924-42001947 CAN: Fields: Identifier extension bit: extended frame
+42001948-42002428 CAN: Fields: Extended Identifier: 196612 (0x30004)
+42001948-42002428 CAN: Fields: Full Identifier: 231407620 (0xdcb0004)
+42002429-42002452 CAN: Fields: Remote transmission request: data frame
+42002453-42002476 CAN: Fields: Reserved bit 1: 0
+42002477-42002500 CAN: Fields: Reserved bit 0: 0
+42002525-42002620 CAN: Fields: Data length code: 8
+42002621-42002836 CAN: Fields: Data byte 0: 0x22
+42002837-42003052 CAN: Fields: Data byte 1: 0x00
+42003053-42003293 CAN: Fields: Data byte 2: 0x01
+42003294-42003509 CAN: Fields: Data byte 3: 0x00
+42003510-42003749 CAN: Fields: Data byte 4: 0x00
+42003750-42003942 CAN: Fields: Data byte 5: 0x13
+42003943-42004158 CAN: Fields: Data byte 6: 0xfe
+42004159-42004374 CAN: Fields: Data byte 7: 0x09
+42004375-42004759 CAN: Fields: CRC-15 sequence: 0x7c95
+42004760-42004783 CAN: Fields: CRC delimiter: 1
+42004784-42004807 CAN: Fields: ACK slot: ACK
+42004808-42004831 CAN: Fields: ACK delimiter: 1
+42004832-42004999 CAN: Fields: End of frame
+42025115-42025138 CAN: Fields: Start of frame
+42025139-42025426 CAN: Fields: Identifier: 832 (0x340)
+42025427-42025450 CAN: Fields: Substitute remote request: 1
+42025451-42025474 CAN: Fields: Identifier extension bit: extended frame
+42025476-42025979 CAN: Fields: Extended Identifier: 4 (0x4)
+42025476-42025979 CAN: Fields: Full Identifier: 218103812 (0xd000004)
+42025980-42026003 CAN: Fields: Remote transmission request: data frame
+42026004-42026027 CAN: Fields: Reserved bit 1: 0
+42026028-42026051 CAN: Fields: Reserved bit 0: 0
+42026076-42026171 CAN: Fields: Data length code: 3
+42026172-42026388 CAN: Fields: Data byte 0: 0x01
+42026389-42026604 CAN: Fields: Data byte 1: 0x00
+42026605-42026820 CAN: Fields: Data byte 2: 0x09
+42026821-42027181 CAN: Fields: CRC-15 sequence: 0x15c5
+42027182-42027205 CAN: Fields: CRC delimiter: 1
+42027205-42027228 CAN: Fields: ACK slot: ACK
+42027229-42027252 CAN: Fields: ACK delimiter: 1
+42027253-42027420 CAN: Fields: End of frame
+42614607-42614630 CAN: Fields: Start of frame
+42614631-42614894 CAN: Fields: Identifier: 836 (0x344)
+42614895-42614918 CAN: Fields: Substitute remote request: 1
+42614919-42614942 CAN: Fields: Identifier extension bit: extended frame
+42614943-42615423 CAN: Fields: Extended Identifier: 65540 (0x10004)
+42614943-42615423 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+42615424-42615447 CAN: Fields: Remote transmission request: data frame
+42615448-42615471 CAN: Fields: Reserved bit 1: 0
+42615472-42615495 CAN: Fields: Reserved bit 0: 0
+42615520-42615615 CAN: Fields: Data length code: 7
+42615616-42615831 CAN: Fields: Data byte 0: 0x00
+42615832-42616072 CAN: Fields: Data byte 1: 0x00
+42616073-42616288 CAN: Fields: Data byte 2: 0x03
+42616289-42616480 CAN: Fields: Data byte 3: 0xd1
+42616481-42616697 CAN: Fields: Data byte 4: 0x00
+42616698-42616937 CAN: Fields: Data byte 5: 0x00
+42616938-42617153 CAN: Fields: Data byte 6: 0x00
+42617154-42617514 CAN: Fields: CRC-15 sequence: 0x42ab
+42617515-42617538 CAN: Fields: CRC delimiter: 1
+42617540-42617563 CAN: Fields: ACK slot: ACK
+42617564-42617587 CAN: Fields: ACK delimiter: 1
+42617588-42617755 CAN: Fields: End of frame
+42621483-42621506 CAN: Fields: Start of frame
+42621507-42621794 CAN: Fields: Identifier: 833 (0x341)
+42621795-42621818 CAN: Fields: Substitute remote request: 1
+42621819-42621842 CAN: Fields: Identifier extension bit: extended frame
+42621844-42622347 CAN: Fields: Extended Identifier: 4 (0x4)
+42621844-42622347 CAN: Fields: Full Identifier: 218365956 (0xd040004)
+42622348-42622371 CAN: Fields: Remote transmission request: data frame
+42622372-42622395 CAN: Fields: Reserved bit 1: 0
+42622396-42622419 CAN: Fields: Reserved bit 0: 0
+42622444-42622539 CAN: Fields: Data length code: 4
+42622540-42622756 CAN: Fields: Data byte 0: 0x00
+42622781-42622996 CAN: Fields: Data byte 1: 0x00
+42622997-42623212 CAN: Fields: Data byte 2: 0x12
+42623213-42623429 CAN: Fields: Data byte 3: 0x00
+42623430-42623789 CAN: Fields: CRC-15 sequence: 0x646d
+42623790-42623813 CAN: Fields: CRC delimiter: 1
+42623815-42623838 CAN: Fields: ACK slot: ACK
+42623839-42623862 CAN: Fields: ACK delimiter: 1
+42623863-42624030 CAN: Fields: End of frame
+42629513-42629536 CAN: Fields: Start of frame
+42629537-42629800 CAN: Fields: Identifier: 882 (0x372)
+42629801-42629824 CAN: Fields: Substitute remote request: 1
+42629825-42629848 CAN: Fields: Identifier extension bit: extended frame
+42629849-42630329 CAN: Fields: Extended Identifier: 131076 (0x20004)
+42629849-42630329 CAN: Fields: Full Identifier: 231342084 (0xdca0004)
+42630330-42630353 CAN: Fields: Remote transmission request: data frame
+42630354-42630377 CAN: Fields: Reserved bit 1: 0
+42630378-42630401 CAN: Fields: Reserved bit 0: 0
+42630426-42630521 CAN: Fields: Data length code: 2
+42630522-42630737 CAN: Fields: Data byte 0: 0x00
+42630738-42630954 CAN: Fields: Data byte 1: 0xfe
+42630955-42631338 CAN: Fields: CRC-15 sequence: 0x0d83
+42631339-42631362 CAN: Fields: CRC delimiter: 1
+42631365-42631388 CAN: Fields: ACK slot: ACK
+42631389-42631412 CAN: Fields: ACK delimiter: 1
+42631413-42631580 CAN: Fields: End of frame
