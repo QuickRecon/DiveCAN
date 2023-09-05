@@ -21,6 +21,19 @@ Shearwaters implementation offloads almost all of the work for managing the CCR 
 
 The shearwater computers perform very little (none found) error/sanity checking on the values provided by the controller, and display what is sent over the bus even if that information is contradictory (for example 0.99 PPO2 with 0mV cells).
 
+## Variation between devices
+While yet to be confirmed at a larger scale, different rebreathers (or items on a rebreather) change the least significant bit in the message IDs. An incomplete list of observed "device IDs" is:
+
+| ID            | Device         |
+| ------------- | -------------  |
+| 1             | Shearwater controller |
+| 2             | JJ OBOE, ISC Pathfinder head |
+| 3             | JJ HUD |
+| 4             | JJ SOLO, Optima head  |
+| 5             | rEvo Battery Box  |
+
+It is expected (but untested) that devices sharing an ID will behave identically with different controllers. For example a JJ HUD should be able to read an ISC Pathfinder bus. This repo uses IDs 1 and 4 as most data captures were taken from a Shearwater controller and JJ SOLO.
+
 ## Testing
 As it is only a 125kbps bus it is very tolerant of mistreatment with regards to termination resistors and differential impedance matching, and the CANLow transition can be sampled with a simple logic analyser. Furthermore it is tolerant to higher than standard voltage transitions, so an [Arduino CAN shield](https://www.keyestudio.com/2019new-keyestudio-can-bus-shield-mcp2551-chip-with-sd-socket-for-arduino-uno-r3-p0543.html) can be used for read/write on the bus. This hardware was used for testing/demonstration of the reverse engineered protocol, further details found under `Testing/`.
 
