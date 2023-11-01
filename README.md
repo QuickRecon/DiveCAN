@@ -32,7 +32,7 @@ While yet to be confirmed at a larger scale, different rebreathers (or items on 
 | 4             | JJ SOLO, Optima head  |
 | 5             | rEvo Battery Box  |
 
-It is expected (but untested) that devices sharing an ID will behave identically with different controllers. For example a JJ HUD should be able to read an ISC Pathfinder bus. This repo uses IDs 1 and 4 as most data captures were taken from a Shearwater controller and JJ SOLO.
+Devices sharing an ID will behave identically with different controllers, this has been validated for JJ controllers operating a CM O2pima rebreather, it is expected that this generalizes. For example a JJ HUD should be able to read an ISC Pathfinder bus. This repo uses IDs 1 and 4 as most data captures were taken from a Shearwater controller and JJ SOLO.
 
 ## Testing
 As it is only a 125kbps bus it is very tolerant of mistreatment with regards to termination resistors and differential impedance matching, and the CANLow transition can be sampled with a simple logic analyser. Furthermore it is tolerant to higher than standard voltage transitions, so an [Arduino CAN shield](https://www.keyestudio.com/2019new-keyestudio-can-bus-shield-mcp2551-chip-with-sd-socket-for-arduino-uno-r3-p0543.html) can be used for read/write on the bus. This hardware was used for testing/demonstration of the reverse engineered protocol, further details found under `Demo/`.
