@@ -13,7 +13,9 @@ There are a number of "maintenance" items that occurs on the bus that does not c
 ID: 0xD370401
 
 Byte 0 is always 0xa8.
+
 Byte 1 is always 0xf3.
+
 Byte 2 is always 0x00.
 
 Very little is known about what this message actually means with regards to its content, shearwater patch notes indicate it should be possible to use this message to turn on the shearwater from the head but more experimentation is needed.
@@ -61,7 +63,9 @@ The last digit of the message ID is the device ID, device IDs confer capabilitie
 | 5             | rEvo Battery Box  |
 
 Byte 0 is the manufacturer ID, values are as tabled.
+
 Byte 1 is always 0x00, the effects of changing this value are to be determined.
+
 Byte 2 is the firmware version on the identing device, for example the shearwater firmware version on message 0xD000001.
 
 | Manufacturer ID | Manufacturer                          |
@@ -106,7 +110,7 @@ Bytes 0-7 is the name that gets sent ot the shearwater and is displayed in the b
 
 | Byte          | Value          |
 | ------------- | -------------  |
-| 0-7            | Name as Chars |
+| 0-7           | Name as Chars  |
 
 ## Example
 Message from JJ SOLO:
@@ -137,3 +141,57 @@ CAN: Fields: End of frame
 ```
 
 # Status
+ID: 0xDCB0004
+
+Byte 0 is the battery voltage expressed as an integer representing 00.0V, for example 0x0F would be 1.5V.
+
+Bytes 1-4 varies in an unknown way.
+
+Byte 5 appears to be the setpoint that the head is attempting to maintain in the form 0.00, eg 0x46 would be a PPO2 of 0.70.
+
+Byte 6 varies in an unknown way.
+
+Byte 7 is the device error code, the values as tabled. Error codes can be ORed together to display a combination of errors. A solenoid error, once sent, appears to persist until the shearwater is turned off and on again. Higher value error codes have been observed (and tested) however they do not present a message to their user so the use is unknown.
+
+| Error Code    | Error Message   |
+| ------------- | -------------   |
+| 0x01          | Low Ext Battery |
+| 0x04          | Solenoid Err    |
+
+
+
+| Byte          | Value           |
+| ------------- | -------------   |
+| 0             | Battery Voltage |
+| 1-4           | Unknown         |
+| 5             | Setpoint        |
+| 6             | Unknown         |
+| 7             | Error code      |
+
+## Example
+Message from JJ SOLO:
+```
+CAN: Fields: Start of frame
+CAN: Fields: Identifier: 836 (0x344)
+CAN: Fields: Substitute remote request: 1
+CAN: Fields: Identifier extension bit: extended frame
+CAN: Fields: Extended Identifier: 65540 (0x10004)
+CAN: Fields: Full Identifier: 231407620 (0xdcb0004)
+CAN: Fields: Remote transmission request: data frame
+CAN: Fields: Reserved bit 1: 0
+CAN: Fields: Reserved bit 0: 0
+CAN: Fields: Data length code: 8
+CAN: Fields: Data byte 0: 0x5b
+CAN: Fields: Data byte 1: 0x00
+CAN: Fields: Data byte 2: 0x02
+CAN: Fields: Data byte 3: 0x00
+CAN: Fields: Data byte 4: 0x00
+CAN: Fields: Data byte 5: 0x46
+CAN: Fields: Data byte 6: 0x63
+CAN: Fields: Data byte 7: 0x08
+CAN: Fields: CRC-15 sequence: 0x2d84
+CAN: Fields: CRC delimiter: 1
+CAN: Fields: ACK slot: ACK
+CAN: Fields: ACK delimiter: 1
+CAN: Fields: End of frame
+```
