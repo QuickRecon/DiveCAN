@@ -1037,7 +1037,7 @@
 11959102-11959245 CAN: Fields: Data byte 0: 0x10
 11959246-11959389 CAN: Fields: Data byte 1: 0x10
 11959390-11959549 CAN: Fields: Data byte 2: 0x00
-11959550-11959678 CAN: Fields: Data byte 3: 0x62
+11959550-11959678 CAN: Fields: Data byte 3: 0x62 
 11959679-11959806 CAN: Fields: Data byte 4: 0x91
 11959807-11959934 CAN: Fields: Data byte 5: 0x10
 11959935-11960078 CAN: Fields: Data byte 6: 0x53
@@ -1075,14 +1075,14 @@
 11978456-11978471 CAN: Fields: Reserved bit 1: 0
 11978472-11978487 CAN: Fields: Reserved bit 0: 0
 11978504-11978567 CAN: Fields: Data length code: 8
-11978568-11978711 CAN: Fields: Data byte 0: 0x2121!
-11978712-11978840 CAN: Fields: Data byte 1: 0x4c4cL
-11978841-11978968 CAN: Fields: Data byte 2: 0x4f4fO
-11978969-11979096 CAN: Fields: Data byte 3: 0x5f5f_
-11979113-11979240 CAN: Fields: Data byte 4: 0x5353S
-11979241-11979368 CAN: Fields: Data byte 5: 0x5053S
-11979369-11979512 CAN: Fields: Data byte 6: 0x4545E
-11979513-11979640 CAN: Fields: Data byte 7: 0x4545E
+11978568-11978711 CAN: Fields: Data byte 0: 0x21 21!
+11978712-11978840 CAN: Fields: Data byte 1: 0x4c 4cL
+11978841-11978968 CAN: Fields: Data byte 2: 0x4f 4fO
+11978969-11979096 CAN: Fields: Data byte 3: 0x5f 5f_
+11979113-11979240 CAN: Fields: Data byte 4: 0x53 53S
+11979241-11979368 CAN: Fields: Data byte 5: 0x50 53S
+11979369-11979512 CAN: Fields: Data byte 6: 0x45 45E
+11979513-11979640 CAN: Fields: Data byte 7: 0x45 45E
 11979641-11979881 CAN: Fields: CRC-15 sequence: 0x1222
 11979882-11979897 CAN: Fields: CRC delimiter: 1
 11979897-11979912 CAN: Fields: ACK slot: ACK
