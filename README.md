@@ -39,8 +39,6 @@ As it is only a 125kbps bus it is very tolerant of mistreatment with regards to 
 
 
 # TO DO
-- Document messaging protocol
 - Demo selectable options in menu
 - Demo multiple devices on bus
 - Make more datacaptures on different units
-- Identify connector/vendor
