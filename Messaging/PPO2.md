@@ -103,7 +103,7 @@ Byte 1 is the consensus PPO2 value represented as an 8 bit integer, it is the va
 | 0             | Status Mask     |
 | 1             | Consensus Value |
 
-# Example
+## Example
 A message representing 3 good cells and a consensus PPO2 of 0.38: 
 
 ```
@@ -124,4 +124,71 @@ CAN: CRC delimiter: 1
 CAN: ACK slot: ACK
 CAN: ACK delimiter: 1
 CAN: End of frame
+```
+
+# Ambient Pressure
+ID: 0xD080000
+
+Atmospheric pressure in millibar.
+
+Bytes 0-1 are the int16 value in big-endian format.
+
+The remainder of the packet is unknown
+
+| Byte          | Value           |
+| ------------- | -------------   |
+| 0-1           | Ambient Pressure|
+
+## Example
+```
+11970036-11970059 CAN: Fields: Start of frame
+11970060-11970323 CAN: Fields: Identifier: 834 (0x342)
+11970324-11970347 CAN: Fields: Substitute remote request: 1
+11970348-11970371 CAN: Fields: Identifier extension bit: extended frame
+11970372-11970875 CAN: Fields: Extended Identifier: 1 (0x1)
+11970372-11970875 CAN: Fields: Full Identifier: 218628097 (0xd080001)
+11970876-11970899 CAN: Fields: Remote transmission request: data frame
+11970900-11970923 CAN: Fields: Reserved bit 1: 0
+11970924-11970947 CAN: Fields: Reserved bit 0: 0
+11970948-11971043 CAN: Fields: Data length code: 5
+11971044-11971259 CAN: Fields: Data byte 0: 0x03
+11971260-11971474 CAN: Fields: Data byte 1: 0xf5
+11971475-11971690 CAN: Fields: Data byte 2: 0x03
+11971691-11971906 CAN: Fields: Data byte 3: 0xf6
+11971907-11972122 CAN: Fields: Data byte 4: 0x01
+11972123-11972482 CAN: Fields: CRC-15 sequence: 0x6b89
+11972483-11972506 CAN: Fields: CRC delimiter: 1
+11972508-11972531 CAN: Fields: ACK slot: ACK
+11972532-11972555 CAN: Fields: ACK delimiter: 1
+11972556-11972723 CAN: Fields: End of frame
+```
+
+# Setpoint
+
+ID: 0xDC90000
+
+Byte 0 is the setpoint the controller is to hold.
+
+| Byte          | Value           |
+| ------------- | -------------   |
+| 0             | Setpoint        |
+
+## Example
+```
+11937138-11937161 CAN: Fields: Start of frame
+11937162-11937425 CAN: Fields: Identifier: 882 (0x372)
+11937426-11937449 CAN: Fields: Substitute remote request: 1
+11937450-11937473 CAN: Fields: Identifier extension bit: extended frame
+11937474-11937976 CAN: Fields: Extended Identifier: 65537 (0x10001)
+11937474-11937976 CAN: Fields: Full Identifier: 231276545 (0xdc90001)
+11937977-11938000 CAN: Fields: Remote transmission request: data frame
+11938001-11938024 CAN: Fields: Reserved bit 1: 0
+11938025-11938048 CAN: Fields: Reserved bit 0: 0
+11938049-11938168 CAN: Fields: Data length code: 1
+11938169-11938360 CAN: Fields: Data byte 0: 0x13
+11938361-11938719 CAN: Fields: CRC-15 sequence: 0x5587
+11938720-11938743 CAN: Fields: CRC delimiter: 1
+11938744-11938767 CAN: Fields: ACK slot: ACK
+11938768-11938791 CAN: Fields: ACK delimiter: 1
+11938792-11938959 CAN: Fields: End of frame
 ```

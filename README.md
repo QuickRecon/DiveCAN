@@ -54,20 +54,20 @@ Devices sharing an ID will behave identically with different controllers, this h
 | `0x03`     | [Shutdown](Messaging/Device%20Metadata.md#shutdown)  | 
 | `0x04`     | [PPO2](Messaging/PPO2.md#ppo2)                       |
 | `0x07`     | [HUD Status](Messaging/Device%20Metadata.md#hud-status) |
-| `0x08`     | Unknown (sent by handset)                            |
-| `0x0A`     | ISO-TP/CANFD frame (TODO)                            |
+| `0x08`     | [Ambient Pressure](Messaging/PPO2.md#ambient-pressure) |
+| `0x0A`     | ISO-TP/CANFD frame (TODO, part of [menu system](Messaging/Bus%20Devices%20Menu.md))|
 | `0x0B`     | Unknown (sent by handset)                            |
 | `0x10`     | NOP (ignored by handset)                             |
 | `0x11`     | [Millivolt](Messaging/PPO2.md#millivolts)            |
 | `0x12`     | [Calibration response](Messaging/Calibration.md#calibration-response) |
 | `0x13`     | [Calibration init](Messaging/Calibration.md#calibration-init) |
 | `0x20`     | Unknown (sent by handset)                            |
-| `0x30`     | Unknown (sent by handset)                            |
+| `0x30`     | Unknown (sent by handset) (TODO, part of [menu system](Messaging/Bus%20Devices%20Menu.md)) |
 | `0x37`     | [BusInit](Messaging/Device%20Metadata.md#bus-init)   |
 | `0xC1`     | Unknown (recv by handset)                            |
 | `0xC3`     | Unknown (sent by handset)                            |
 | `0xC4`     | Unknown (sent by handset)                            |
-| `0xC9`     | Unknown (sent by handset)                            |
+| `0xC9`     | [Setpoint](Messaging/PPO2.md#setpoint)               |
 | `0xCA`     | [Cell status](Messaging/PPO2.md#cell-status)         |
 | `0xCB`     | [Status](Messaging/Device%20Metadata.md#status)      |
 | `0xCC`     | Unknown (sent by handset)                            |
