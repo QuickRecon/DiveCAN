@@ -11,6 +11,16 @@ The bus is a 125kbps CAN bus running at an ~3v logic level (3.0v CAN high, 2.0v 
 ## The protocol
 From observations it appears that DiveCAN does not use a secondary layer on top of DiveCAN to abstract the data (such as CANOpen) and is transmitting the raw data over the CAN protocol using different messages, with each message having a different extended ID. All IDs observed lie in the `0x0dxxxxxx` block with different ranges corresponding to different types of message, for example the `0x0ddxxxxx` range is used for exchanging device serial numbers. Further details about the messaging protocol is found under `Messaging/`.
 
+The extended ID can be broken down like this
+```
+ 31              24 23      16 15           8 7        0
++----------------+----------+---------------+----------+
+|   chan (0x0D)  | msg_type | params/dst_id |  src_id  |
+|    (5 bits)    | (8 bits) |    (8 bits)   | (8 bits) |
++----------------+----------+---------------+----------+
+```
+
+
 ## The architecture
 Shearwaters implementation offloads almost all of the work for managing the CCR onto the DiveCAN node in the head of the rebreather (controller) with the shearwater acting only as a display/interface. The controller has the following major responsibilities (identified so far):
 - Convert millivolts to PPO2, transmit both to display.
@@ -33,6 +43,35 @@ While yet to be confirmed at a larger scale, different rebreathers (or items on 
 | 5             | rEvo Battery Box  |
 
 Devices sharing an ID will behave identically with different controllers, this has been validated for JJ controllers operating a CM O2pima rebreather, it is expected that this generalizes. For example a JJ HUD should be able to read an ISC Pathfinder bus. This repo uses IDs 1 and 4 as most data captures were taken from a Shearwater controller and JJ SOLO.
+
+### DiveCAN message types
+
+| `msg_type` | Function                                             |
+|------------|------------------------------------------------------|
+| `0x00`     | [Id](Messaging/Device%20Metadata.md#id)              |
+| `0x01`     | [Name](Messaging/Device%20Metadata.md#name)          |
+| `0x02`     | Unknown (sent/received by handset)                   |
+| `0x03`     | Unknown (sent/received by handset)                   |
+| `0x04`     | [PPO2](Messaging/PPO2.md#ppo2)                       |
+| `0x07`     | Unknown (probably ext battery voltage)               |
+| `0x08`     | Unknown (sent by handset)                            |
+| `0x0A`     | ISO-TP/CANFD frame (TODO)                            |
+| `0x0B`     | Unknown (sent by handset)                            |
+| `0x10`     | NOP (ignored by handset)                             |
+| `0x11`     | [Millivolt](Messaging/PPO2.md#millivolts)            |
+| `0x12`     | [Calibration response](Messaging/Calibration.md#calibration-response) |
+| `0x13`     | [Calibration init](Messaging/Calibration.md#calibration-init) |
+| `0x20`     | Unknown (sent by handset)                            |
+| `0x30`     | Unknown (sent by handset)                            |
+| `0x37`     | [BusInit](Messaging/Device%20Metadata.md#bus-init)   |
+| `0xC1`     | Unknown (recv by handset)                            |
+| `0xC3`     | Unknown (sent by handset)                            |
+| `0xC4`     | Unknown (sent by handset)                            |
+| `0xC9`     | Unknown (sent by handset)                            |
+| `0xCA`     | [Cell status](Messaging/PPO2.md#cell-status)         |
+| `0xCB`     | [Status](Messaging/Device%20Metadata.md#status)      |
+| `0xCC`     | Unknown (sent by handset)                            |
+| `0xD2`     | Unknown (probably serial number)                     |
 
 ## Testing
 As it is only a 125kbps bus it is very tolerant of mistreatment with regards to termination resistors and differential impedance matching, and the CANLow transition can be sampled with a simple logic analyser. Furthermore it is tolerant to higher than standard voltage transitions, so an [Arduino CAN shield](https://www.keyestudio.com/2019new-keyestudio-can-bus-shield-mcp2551-chip-with-sd-socket-for-arduino-uno-r3-p0543.html) can be used for read/write on the bus. This hardware was used for testing/demonstration of the reverse engineered protocol, further details found under `Demo/`.
