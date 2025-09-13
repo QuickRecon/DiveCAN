@@ -51,7 +51,7 @@ Devices sharing an ID will behave identically with different controllers, this h
 | `0x00`     | [Id](Messaging/Device%20Metadata.md#id)              |
 | `0x01`     | [Name](Messaging/Device%20Metadata.md#name)          |
 | `0x02`     | Unknown (sent/received by handset)                   |
-| `0x03`     | Unknown (sent/received by handset)                   |
+| `0x03`     | [Shutdown](Messaging/Device%20Metadata.md#shutdown)  | 
 | `0x04`     | [PPO2](Messaging/PPO2.md#ppo2)                       |
 | `0x07`     | Unknown (probably ext battery voltage)               |
 | `0x08`     | Unknown (sent by handset)                            |

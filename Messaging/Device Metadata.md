@@ -50,6 +50,11 @@ CAN: Fields: ACK delimiter: 0
 CAN: Fields: End of frame
 ```
 
+# Shutdown 
+ID: 0xD03000
+
+This is the last message sent before the handset powers off and releases the bus enable line. This signals to all other devices on the bus to also release the line and shut down. If the line fails to release then the handset stays on with a "BUS TURNOFF FAIL" message.
+
 # ID
 ID: 0xD000001/4
 
