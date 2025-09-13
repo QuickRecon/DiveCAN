@@ -53,7 +53,7 @@ Devices sharing an ID will behave identically with different controllers, this h
 | `0x02`     | Unknown (sent/received by handset)                   |
 | `0x03`     | [Shutdown](Messaging/Device%20Metadata.md#shutdown)  | 
 | `0x04`     | [PPO2](Messaging/PPO2.md#ppo2)                       |
-| `0x07`     | Unknown (probably ext battery voltage)               |
+| `0x07`     | [HUD Status](Messaging/Device%20Metadata.md#hud-status) |
 | `0x08`     | Unknown (sent by handset)                            |
 | `0x0A`     | ISO-TP/CANFD frame (TODO)                            |
 | `0x0B`     | Unknown (sent by handset)                            |

@@ -202,7 +202,7 @@ CAN: Fields: ACK delimiter: 1
 CAN: Fields: End of frame
 ```
 
-# Serial
+# Serial Number
 ID: 0xDD20003
 
 Serial number as 8 ASCII chars.
@@ -237,3 +237,24 @@ CAN: Fields: ACK slot: ACK
 CAN: Fields: ACK delimiter: 1
 CAN: Fields: End of frame
 ```
+
+# HUD Status
+ID: 0xD070003
+
+This is sent by the only Shearwater HUD as a status message.
+
+Byte 0 is the battery status, 0x1 implies the battery is good, 0x0 implies the battery is low and the HUD should display the low battery animation.
+
+Bytes 1 is 0x23.
+
+Byte 2-3 are 0x00
+
+Byte 4 is 0x1e
+
+
+| Byte          | Value           |
+| ------------- | -------------   |
+| 0             | Battery Status  |
+| 1             | 0x23            |
+| 2-3           | 0x00            |
+| 4             | 0x1e            |
