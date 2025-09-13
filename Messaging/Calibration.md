@@ -53,10 +53,15 @@ ID: 0xD120004
 
 This message is sent when the head informs the handset of a change in calibration status, byte 0 in the message indicates what type of message it is. 
 
-| Byte 0 | Meaning | 
-| ------ | ------- |
-| 0x05   | Ack     |
-| 0x01   | Result  |
+| Byte 0 | Meaning         |
+| ------ | --------------- |
+| 0x01   | Success         |
+| 0x05   | Ack             |
+| 0x08   | Rejected        |
+| 0x10   | Low ext. batt   |
+| 0x18   | Solenoid error  |
+| 0x20   | Fo2 range error |
+| 0x28   | Pressure error  |
 
 ## Ack
 Ack is the initial response to the handset request to calibrate and must be sent after a request to calibrate, otherwise the shearwater will timeout on the request. The fields for the Ack appear to be invariant and are as per the example.
