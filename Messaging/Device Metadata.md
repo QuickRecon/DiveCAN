@@ -8,6 +8,7 @@ There are a number of "maintenance" items that occurs on the bus that does not c
 | ID           | Handset/Head  | 0xD000001/4   | 3             | The device ID, the shearwater (probably) has an internal lookup to compare this ID with capabilities (solenoid, cell, etc), also has version number for firmware. |
 | Name         | Head          | 0xD010004     | 8             | Transmit the name of the device, can be anything (that fits), displayed in bus devices menu |
 | Status       | Head          | 0xDCB0004     | 8             | Status of the device, has ext battery voltage and error code|
+| Serial       | Head/HUD/Bat  | 0xDD20003     | 8             | ASCII string of device serial number
 
 # Bus Init
 ID: 0xD370401
@@ -190,6 +191,42 @@ CAN: Fields: Data byte 5: 0x46
 CAN: Fields: Data byte 6: 0x63
 CAN: Fields: Data byte 7: 0x08
 CAN: Fields: CRC-15 sequence: 0x2d84
+CAN: Fields: CRC delimiter: 1
+CAN: Fields: ACK slot: ACK
+CAN: Fields: ACK delimiter: 1
+CAN: Fields: End of frame
+```
+
+# Serial
+ID: 0xDD20003
+
+Serial number as 8 ASCII chars.
+
+| Byte          | Value            |
+| ------------- | ---------------  |
+| 0-7           | Serial as Chars  |
+
+## Example
+```
+CAN: Fields: Start of frame
+CAN: Fields: Identifier: 884 (0x374)
+CAN: Fields: Substitute remote request: 1
+CAN: Fields: Identifier extension bit: extended frame
+CAN: Fields: Extended Identifier: 131075 (0x20003)
+CAN: Fields: Full Identifier: 231866371 (0xdd20003)
+CAN: Fields: Remote transmission request: data frame
+CAN: Fields: Reserved bit 1: 0
+CAN: Fields: Reserved bit 0: 0
+CAN: Fields: Data length code: 8
+CAN: Fields: Data byte 0: 0x43
+CAN: Fields: Data byte 1: 0x41
+CAN: Fields: Data byte 2: 0x30
+CAN: Fields: Data byte 3: 0x30
+CAN: Fields: Data byte 4: 0x31
+CAN: Fields: Data byte 5: 0x36
+CAN: Fields: Data byte 6: 0x38
+CAN: Fields: Data byte 7: 0x33
+CAN: Fields: CRC-15 sequence: 0x64d4
 CAN: Fields: CRC delimiter: 1
 CAN: Fields: ACK slot: ACK
 CAN: Fields: ACK delimiter: 1

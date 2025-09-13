@@ -71,7 +71,7 @@ Devices sharing an ID will behave identically with different controllers, this h
 | `0xCA`     | [Cell status](Messaging/PPO2.md#cell-status)         |
 | `0xCB`     | [Status](Messaging/Device%20Metadata.md#status)      |
 | `0xCC`     | Unknown (sent by handset)                            |
-| `0xD2`     | Unknown (probably serial number)                     |
+| `0xD2`     | [Serial](Messaging/Device%20Metadata.md#serial)      |
 
 ## Testing
 As it is only a 125kbps bus it is very tolerant of mistreatment with regards to termination resistors and differential impedance matching, and the CANLow transition can be sampled with a simple logic analyser. Furthermore it is tolerant to higher than standard voltage transitions, so an [Arduino CAN shield](https://www.keyestudio.com/2019new-keyestudio-can-bus-shield-mcp2551-chip-with-sd-socket-for-arduino-uno-r3-p0543.html) can be used for read/write on the bus. This hardware was used for testing/demonstration of the reverse engineered protocol, further details found under `Demo/`.
