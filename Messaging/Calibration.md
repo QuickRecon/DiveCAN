@@ -20,7 +20,7 @@ This message is sent when the shearwater goes into calibration mode, where it wa
 
 Byte 0 is the FO2 of the calibration gas in the usual form (eg 0x63 is 0.99).
 
-Byte 1-2 is the pressure transmitted as big-endian 16 bit integer, eg 0x400 would be 1024 millibar.
+Byte 1-2 is the pressure transmitted as big-endian 16 bit integer, eg 0x0400 would be 1024 millibar.
 
 
 | Byte          | Value                |
