@@ -216,6 +216,19 @@ def print_message(msg: can.Message) -> None:
         global calibrating
         calibrating = True
 
+def txShutdown(bus):
+    msg = can.Message(
+        arbitration_id=0xD030004,
+        data=[0x01],
+        is_extended_id=True
+    )
+    try:
+        bus.send(msg)
+    except can.CanError:
+        #print("Message NOT sent")
+        global busFailed
+        busFailed = True
+
 with can.ThreadSafeBus() as bus: 
     can.Notifier(bus, [print_message], loop=None)
 
@@ -233,6 +246,9 @@ with can.ThreadSafeBus() as bus:
             swConnected = True
             break
 
+    time.sleep(1)
+    txShutdown(bus)
+ 
     while not calibrating:
         for msg in bus:
             if msg.arbitration_id == 0xD230401:

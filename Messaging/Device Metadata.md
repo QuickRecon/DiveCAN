@@ -56,7 +56,7 @@ sent/received by handset, observed sent by SOLO, payload always 0x02, 0x01, 0x01
 # Shutdown 
 ID: 0xD03000
 
-This is the last message sent before the handset powers off and releases the bus enable line. This signals to all other devices on the bus to also release the line and shut down. If the line fails to release then the handset stays on with a "BUS TURNOFF FAIL" message.
+This is the last message sent before the handset powers off and releases the bus enable line. This signals to all other devices on the bus to also release the line and shut down. If the line fails to release then the handset stays on with a "BUS TURNOFF FAIL" message. Sending this message to a handset will cause it to shut down if the wet contacts are not bridged.
 
 # ID
 ID: 0xD000001/4
