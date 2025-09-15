@@ -1,3 +1,14 @@
+# Co2 Enabled
+ID: 0xD210004
+
+Sent on startup, on setting change, and when a CO2 message is received when CO2 is disabled (0x00 sent back)
+
+Byte 0 is 0x01 if CO2 enabled, 0x00 otherwise
+| Byte          | Value           |
+| ------------- | -------------   |
+| 0             | Enabled         |
+
+
 # Co2 Value
 ID: 0xD210004
 
