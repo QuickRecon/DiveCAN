@@ -131,13 +131,17 @@ ID: 0xD080000
 
 Atmospheric pressure in millibar.
 
-Bytes 0-1 are the int16 value in big-endian format.
+Bytes 0-1 is the int16 surface (startup) ambient pressure in big-endian format.
+Bytes 2-3 are the int16 current ambient pressure in big-endian format.
+Byte 5 is 1 if solenoid depth compensation is enabled in the handset configuration, 0 otherwise
 
 The remainder of the packet is unknown
 
-| Byte          | Value           |
-| ------------- | -------------   |
-| 0-1           | Ambient Pressure|
+| Byte          | Value                       |
+| ------------- | -------------               |
+| 0-1           | Ambient Pressure at Surface |
+| 2-3           | Ambient Pressure current    |
+| 5             | Solenoid Depth compensation |
 
 ## Example
 ```
