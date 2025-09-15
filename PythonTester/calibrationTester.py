@@ -58,7 +58,7 @@ def txStatus(bus):
 def txPPO2(bus):
     msg = can.Message(
         arbitration_id=0xD040004,
-        data=[0x00, 0x20, 0x20, 0x20],
+        data=[0x00, 0x30, 0x30, 0x30],
         is_extended_id=True
     )
     try:
@@ -151,21 +151,36 @@ def txCO2(bus):
     except can.CanError:
         #print("Message NOT sent")
         global busFailed
-        busFailed = True
+        busFailed = True 
 
-# NOT YET WORKING, ID unknown
-def txPressure(bus):
+def txO2Pressure(bus):
     msg = can.Message(
-        arbitration_id=0xD230004,
-        data=[0x01, 0x01, 0x01],
+        arbitration_id=0xD0B0004,
+        data=[0x00, 0x03,0x03],
         is_extended_id=True
     )
     try:
         bus.send(msg)
+        print(msg)
     except can.CanError:
         #print("Message NOT sent")
         global busFailed
         busFailed = True
+
+def txDilPressure(bus):
+    msg = can.Message(
+        arbitration_id=0xD0B0004,
+        data=[0x10, 0x02,0x03],
+        is_extended_id=True
+    )
+    try:
+        bus.send(msg)
+        print(msg)
+    except can.CanError:
+        #print("Message NOT sent")
+        global busFailed
+        busFailed = True
+
 
 
 # The bare minimum to convince the shearwater that we're real
@@ -177,7 +192,8 @@ def ping(bus):
     txMillis(bus)
     txCellStat(bus)
     txCO2(bus)
-    txPressure(bus)
+    txO2Pressure(bus)
+    txDilPressure(bus)
 
 
 # Global state storage
@@ -218,7 +234,7 @@ with can.ThreadSafeBus() as bus:
             print("Shearwater Connected")
             swConnected = True
             break
-    
+
     while not calibrating:
         for msg in bus:
             if msg.arbitration_id == 0xD230401:
@@ -228,3 +244,4 @@ with can.ThreadSafeBus() as bus:
 
     time.sleep(1)
     txCO2CalResp(bus, 0x0)
+
