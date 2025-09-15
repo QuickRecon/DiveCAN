@@ -114,12 +114,54 @@ def txCalAck(bus):
 def txCalResp(bus, err):
     msg = can.Message(
         arbitration_id=0xD120004,
-        data=[err, 0x32, 0x31, 0x33, 0x64, 0x03, 0xf6, 0x07],
+        data=[err, 0xFF, 0x31, 0xFF, 0x64, 0x03, 0xf6, 0x07],
         is_extended_id=True
     )
     try:
         bus.send(msg)
         #print(f"Message sent on {bus.channel_info}")
+    except can.CanError:
+        #print("Message NOT sent")
+        global busFailed
+        busFailed = True
+
+def txCO2CalResp(bus, err):
+    msg = can.Message(
+        arbitration_id=0xD220004,
+        data=[err, 0x01, 0x00],
+        is_extended_id=True
+    )
+    try:
+        bus.send(msg)
+        #print(f"Message sent on {bus.channel_info}")
+    except can.CanError:
+        #print("Message NOT sent")
+        global busFailed
+        busFailed = True
+
+def txCO2(bus):
+    msg = can.Message(
+        arbitration_id=0xD210004,
+        data=[0x01, 0x01, 0x10],
+        is_extended_id=True
+    )
+    try:
+        bus.send(msg)
+        #print(f"Message sent on {bus.channel_info}")
+    except can.CanError:
+        #print("Message NOT sent")
+        global busFailed
+        busFailed = True
+
+# NOT YET WORKING, ID unknown
+def txPressure(bus):
+    msg = can.Message(
+        arbitration_id=0xD230004,
+        data=[0x01, 0x01, 0x01],
+        is_extended_id=True
+    )
+    try:
+        bus.send(msg)
     except can.CanError:
         #print("Message NOT sent")
         global busFailed
@@ -134,6 +176,8 @@ def ping(bus):
     txPPO2(bus)
     txMillis(bus)
     txCellStat(bus)
+    txCO2(bus)
+    txPressure(bus)
 
 
 # Global state storage
@@ -154,7 +198,7 @@ def print_message(msg: can.Message) -> None:
     if msg.arbitration_id == 0xD000001:
         global swConnected
         swConnected = True
-    if msg.arbitration_id == 0xD130401:
+    if msg.arbitration_id == 0xD230401:
         global calibrating
         calibrating = True
 
@@ -177,11 +221,10 @@ with can.ThreadSafeBus() as bus:
     
     while not calibrating:
         for msg in bus:
-            if msg.arbitration_id == 0xD130401:
+            if msg.arbitration_id == 0xD230401:
                 print("Recieved Calibration Request")
                 calibrating = True
                 break
 
-    txCalAck(bus)
-    time.sleep(4)
-    txCalResp(bus, 0x28)
+    time.sleep(1)
+    txCO2CalResp(bus, 0x0)
