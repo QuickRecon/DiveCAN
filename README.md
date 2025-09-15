@@ -62,6 +62,9 @@ Devices sharing an ID will behave identically with different controllers, this h
 | `0x12`     | [Calibration response](Messaging/Calibration.md#calibration-response) |
 | `0x13`     | [Calibration init](Messaging/Calibration.md#calibration-init) |
 | `0x20`     | Unknown (sent by handset)                            |
+| `0x21`     | [CO2](Messaging/CO2.md)                              |
+| `0x22`     | [CO2 Calibration Response](Messaging/CO2.md#co2-calibration-response) |
+| `0x23`     | [CO2 Calibration Init](Messaging/CO2.md#co2-calibration-request) |
 | `0x30`     | Unknown (sent by handset) (TODO, part of [menu system](Messaging/Bus%20Devices%20Menu.md)) |
 | `0x37`     | [BusInit](Messaging/Device%20Metadata.md#bus-init)   |
 | `0xC1`     | Unknown (recv by handset)                            |

@@ -12,7 +12,7 @@ Byte 0-1 is the CO2 concentration gas in mBar, in big endian format
 
 
 # Co2 Calibration response
-ID: 0xD230004
+ID: 0xD220004
 
 Byte 0 is the calibration response, if it is 1 then the calibration succeeded, any non-zero response is interpreted as a fail.
 
