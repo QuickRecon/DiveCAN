@@ -58,6 +58,8 @@ ID: 0xD03000
 
 This is the last message sent before the handset powers off and releases the bus enable line. This signals to all other devices on the bus to also release the line and shut down. If the line fails to release then the handset stays on with a "BUS TURNOFF FAIL" message. Sending this message to a handset will cause it to shut down if the wet contacts are not bridged.
 
+Byte 0: Cause of shutdown, 0x00 is user initated and 0x01 is timeout.
+
 # ID
 ID: 0xD000001/4
 
