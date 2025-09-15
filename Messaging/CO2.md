@@ -1,11 +1,27 @@
 # Co2 Value
 ID: 0xD210004
 
-Byte 0-1 is the CO2 concentration gas in ppm, in little endian format with 0x0120 = 8193, 0 is reserved for no-data, so 0x0100 results in a zero value
+Byte 0 seems to have no effect
+Byte 0-1 is the CO2 concentration gas in mBar, in big endian format
+
+| Byte          | Value           |
+| ------------- | -------------   |
+| 0             | Status?         |
+| 1-2           | PCO2 value      |
+
+
+
+# Co2 Calibration response
+ID: 0xD230004
+
+Byte 0 is the calibration response, if it is 1 then the calibration succeeded, any non-zero response is interpreted as a fail.
+
+Byte 1-2 is latest CO2 sample value
 
 | Byte          | Value                           |
 | ------------- | -------------                   |
-| 0- 1          | PCO2 value in Little Endian     |
+| 0             | Calibration Ok                  |
+| 1-2           | Value at end of calibration     |
 
 
 
