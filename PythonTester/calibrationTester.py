@@ -161,7 +161,6 @@ def txO2Pressure(bus):
     )
     try:
         bus.send(msg)
-        print(msg)
     except can.CanError:
         #print("Message NOT sent")
         global busFailed
@@ -175,7 +174,6 @@ def txDilPressure(bus):
     )
     try:
         bus.send(msg)
-        print(msg)
     except can.CanError:
         #print("Message NOT sent")
         global busFailed
