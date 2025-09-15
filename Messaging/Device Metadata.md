@@ -50,6 +50,9 @@ CAN: Fields: ACK delimiter: 0
 CAN: Fields: End of frame
 ```
 
+# Unknown metadata
+sent/received by handset, observed sent by SOLO, payload always 0x02, 0x01, 0x01 in recorded dataset.
+
 # Shutdown 
 ID: 0xD03000
 

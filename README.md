@@ -50,13 +50,13 @@ Devices sharing an ID will behave identically with different controllers, this h
 |------------|------------------------------------------------------|
 | `0x00`     | [Id](Messaging/Device%20Metadata.md#id)              |
 | `0x01`     | [Name](Messaging/Device%20Metadata.md#name)          |
-| `0x02`     | Unknown (sent/received by handset)                   |
+| `0x02`     | [Unknown metadata](Messaging/Device%20Metadata.md#Unknown-metadata)                                             |
 | `0x03`     | [Shutdown](Messaging/Device%20Metadata.md#shutdown)  | 
 | `0x04`     | [PPO2](Messaging/PPO2.md#ppo2)                       |
 | `0x07`     | [HUD Status](Messaging/Device%20Metadata.md#hud-status) |
 | `0x08`     | [Ambient Pressure](Messaging/PPO2.md#ambient-pressure) |
 | `0x0A`     | ISO-TP/CANFD frame (TODO, part of [menu system](Messaging/Bus%20Devices%20Menu.md))|
-| `0x0B`     | Unknown (sent by handset)                            |
+| `0x0B`     | [Tank Pressure](Messaging/Pressure.md#tank-pressure) |
 | `0x10`     | NOP (ignored by handset)                             |
 | `0x11`     | [Millivolt](Messaging/PPO2.md#millivolts)            |
 | `0x12`     | [Calibration response](Messaging/Calibration.md#calibration-response) |
@@ -67,7 +67,7 @@ Devices sharing an ID will behave identically with different controllers, this h
 | `0x23`     | [CO2 Calibration Init](Messaging/CO2.md#co2-calibration-request) |
 | `0x30`     | Unknown (sent by handset) (TODO, part of [menu system](Messaging/Bus%20Devices%20Menu.md)) |
 | `0x37`     | [BusInit](Messaging/Device%20Metadata.md#bus-init)   |
-| `0xC1`     | Unknown (recv by handset)                            |
+| `0xC1`     | Unknown (recv by handset, sending results in 0xC4 back with 0x00 payload)                            |
 | `0xC3`     | Unknown (sent by handset)                            |
 | `0xC4`     | Unknown (sent by handset)                            |
 | `0xC9`     | [Setpoint](Messaging/PPO2.md#setpoint)               |
