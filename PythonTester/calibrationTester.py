@@ -8,6 +8,15 @@ can.rc['interface'] = 'socketcan'
 can.rc['channel'] = 'can0'
 can.rc['bitrate'] = 125000
 
+startTime = time.time()
+
+def printMSG(msg):
+    currTime = time.time()
+    deltaT = currTime - startTime
+    deltaTStr = "{:.5f}".format(deltaT)
+    hex_string = "".join("%02x," % b for b in msg.data)
+    print("t+"+deltaTStr+" | TX id: " + hex(msg.arbitration_id)+"; "+ hex_string)
+
 def txID(bus):
     msg = can.Message(
         arbitration_id=0xD000004,
@@ -16,7 +25,8 @@ def txID(bus):
     )
     try:
         bus.send(msg)
-        #print(f"Message sent on {bus.channel_info}")
+        printMSG(msg)
+#        print(f"Message sent on {bus.channel_info}")
     except can.CanError:
         #print("Message NOT sent")
         global busFailed
@@ -35,6 +45,7 @@ def txName(bus):
     )
     try:
         bus.send(msg)
+        printMSG(msg)
         #print(f"Message sent on {bus.channel_info}")
     except can.CanError:
         #print("Message NOT sent")
@@ -49,6 +60,7 @@ def txStatus(bus):
     )
     try:
         bus.send(msg)
+        printMSG(msg)
         #print(f"Message sent on {bus.channel_info}")
     except can.CanError:
         #print("Message NOT sent")
@@ -63,6 +75,7 @@ def txPPO2(bus):
     )
     try:
         bus.send(msg)
+        printMSG(msg)
         #print(f"Message sent on {bus.channel_info}")
     except can.CanError:
         #print("Message NOT sent")
@@ -77,6 +90,7 @@ def txMillis(bus):
     )
     try:
         bus.send(msg)
+        printMSG(msg)
         #print(f"Message sent on {bus.channel_info}")
     except can.CanError:
         #print("Message NOT sent")
@@ -91,6 +105,7 @@ def txCellStat(bus):
     )
     try:
         bus.send(msg)
+        printMSG(msg)
         #print(f"Message sent on {bus.channel_info}")
     except can.CanError:
         #print("Message NOT sent")
@@ -105,6 +120,7 @@ def txCalAck(bus):
     )
     try:
         bus.send(msg)
+        printMSG(msg)
         #print(f"Message sent on {bus.channel_info}")
     except can.CanError:
         #print("Message NOT sent")
@@ -119,6 +135,7 @@ def txCalResp(bus, err):
     )
     try:
         bus.send(msg)
+        printMSG(msg)
         #print(f"Message sent on {bus.channel_info}")
     except can.CanError:
         #print("Message NOT sent")
@@ -133,6 +150,7 @@ def txCO2CalResp(bus, err):
     )
     try:
         bus.send(msg)
+        printMSG(msg)
         #print(f"Message sent on {bus.channel_info}")
     except can.CanError:
         #print("Message NOT sent")
@@ -147,6 +165,7 @@ def txCO2(bus):
     )
     try:
         bus.send(msg)
+        printMSG(msg)
         #print(f"Message sent on {bus.channel_info}")
     except can.CanError:
         #print("Message NOT sent")
@@ -161,6 +180,7 @@ def txO2Pressure(bus):
     )
     try:
         bus.send(msg)
+        printMSG(msg)
     except can.CanError:
         #print("Message NOT sent")
         global busFailed
@@ -174,11 +194,40 @@ def txDilPressure(bus):
     )
     try:
         bus.send(msg)
+        printMSG(msg)
     except can.CanError:
         #print("Message NOT sent")
         global busFailed
         busFailed = True
 
+
+def txTest1(bus):
+    msg = can.Message(
+        arbitration_id=0xD30104,
+        data=[0x1,0x1, 0x1],
+        is_extended_id=True
+    )
+    try:
+        bus.send(msg)
+        printMSG(msg)
+    except can.CanError:
+        #print("Message NOT sent")
+        global busFailed
+        busFailed = True
+
+def txTest(bus):
+    msg = can.Message(
+        arbitration_id=0xD0a0204,
+        data=[0x4,0x0, 0x22, 0x80, 0x30],
+        is_extended_id=True
+    )
+    try:
+        bus.send(msg)
+        printMSG(msg)
+    except can.CanError:
+        #print("Message NOT sent")
+        global busFailed
+        busFailed = True
 
 
 # The bare minimum to convince the shearwater that we're real
@@ -188,10 +237,13 @@ def ping(bus):
     txStatus(bus)
     txPPO2(bus)
     txMillis(bus)
+    txID(bus)
     txCellStat(bus)
     txCO2(bus)
-    txO2Pressure(bus)
-    txDilPressure(bus)
+    # txO2Pressure(bus)
+    # txDilPressure(bus)
+    #txTest1(bus)
+    #txTest(bus)
 
 
 # Global state storage
@@ -200,7 +252,6 @@ calibrating = False
 pinging = True
 printMsgs = True
 
-startTime = time.time()
 def print_message(msg: can.Message) -> None:
     """Regular callback function. Can also be a coroutine."""
     if printMsgs:
@@ -208,7 +259,7 @@ def print_message(msg: can.Message) -> None:
         deltaT = currTime - startTime
         deltaTStr = "{:.5f}".format(deltaT)
         hex_string = "".join("%02x," % b for b in msg.data)
-        print("t+"+deltaTStr+" | rx id: " + hex(msg.arbitration_id)+"; "+ hex_string)
+        print("t+"+deltaTStr+" | RX id: " + hex(msg.arbitration_id)+"; "+ hex_string)
     if msg.arbitration_id == 0xD000001:
         global swConnected
         swConnected = True
@@ -236,7 +287,7 @@ with can.ThreadSafeBus() as bus:
         ping(bus)
         #print("ping!")
         if(pinging):
-            threading.Timer(1, pingTimer).start()
+            threading.Timer(3, pingTimer).start()
 
     pingTimer()
 
@@ -245,17 +296,17 @@ with can.ThreadSafeBus() as bus:
             print("Shearwater Connected")
             swConnected = True
             break
-
-    time.sleep(1)
-    txShutdown(bus)
  
     while not calibrating:
-        for msg in bus:
-            if msg.arbitration_id == 0xD230401:
-                print("Recieved Calibration Request")
-                calibrating = True
-                break
+         for msg in bus:
+             if msg.arbitration_id == 0xD230401:
+                 print("Recieved Calibration Request")
+                 calibrating = True
+                 break
 
     time.sleep(1)
-    txCO2CalResp(bus, 0x0)
+    txCO2CalResp(bus, 0x01)
+
+    while True:
+        a=1
 

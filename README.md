@@ -80,6 +80,92 @@ Devices sharing an ID will behave identically with different controllers, this h
 As it is only a 125kbps bus it is very tolerant of mistreatment with regards to termination resistors and differential impedance matching, and the CANLow transition can be sampled with a simple logic analyser. Furthermore it is tolerant to higher than standard voltage transitions, so an [Arduino CAN shield](https://www.keyestudio.com/2019new-keyestudio-can-bus-shield-mcp2551-chip-with-sd-socket-for-arduino-uno-r3-p0543.html) can be used for read/write on the bus. This hardware was used for testing/demonstration of the reverse engineered protocol, further details found under `Demo/`.
 
 
+# A note on captures
+There are 2 formats of capture in use under `Data Captures/`. The format of:
+```11937138-11937161 CAN: Fields: Start of frame
+11937162-11937425 CAN: Fields: Identifier: 882 (0x372)
+11937426-11937449 CAN: Fields: Substitute remote request: 1
+11937450-11937473 CAN: Fields: Identifier extension bit: extended frame
+11937474-11937976 CAN: Fields: Extended Identifier: 65537 (0x10001)
+11937474-11937976 CAN: Fields: Full Identifier: 231276545 (0xdc90001)
+11937977-11938000 CAN: Fields: Remote transmission request: data frame
+11938001-11938024 CAN: Fields: Reserved bit 1: 0
+11938025-11938048 CAN: Fields: Reserved bit 0: 0
+11938049-11938168 CAN: Fields: Data length code: 1
+11938169-11938360 CAN: Fields: Data byte 0: 0x13
+11938361-11938719 CAN: Fields: CRC-15 sequence: 0x5587
+11938720-11938743 CAN: Fields: CRC delimiter: 1
+11938744-11938767 CAN: Fields: ACK slot: ACK
+11938768-11938791 CAN: Fields: ACK delimiter: 1
+11938792-11938959 CAN: Fields: End of frame
+11970036-11970059 CAN: Fields: Start of frame
+11970060-11970323 CAN: Fields: Identifier: 834 (0x342)
+11970324-11970347 CAN: Fields: Substitute remote request: 1
+11970348-11970371 CAN: Fields: Identifier extension bit: extended frame
+11970372-11970875 CAN: Fields: Extended Identifier: 1 (0x1)
+11970372-11970875 CAN: Fields: Full Identifier: 218628097 (0xd080001)
+11970876-11970899 CAN: Fields: Remote transmission request: data frame
+11970900-11970923 CAN: Fields: Reserved bit 1: 0
+11970924-11970947 CAN: Fields: Reserved bit 0: 0
+11970948-11971043 CAN: Fields: Data length code: 5
+11971044-11971259 CAN: Fields: Data byte 0: 0x03
+11971260-11971474 CAN: Fields: Data byte 1: 0xf5
+11971475-11971690 CAN: Fields: Data byte 2: 0x03
+11971691-11971906 CAN: Fields: Data byte 3: 0xf6
+11971907-11972122 CAN: Fields: Data byte 4: 0x01
+11972123-11972482 CAN: Fields: CRC-15 sequence: 0x6b89
+11972483-11972506 CAN: Fields: CRC delimiter: 1
+11972508-11972531 CAN: Fields: ACK slot: ACK
+11972532-11972555 CAN: Fields: ACK delimiter: 1
+11972556-11972723 CAN: Fields: End of frame
+12277050-12277073 CAN: Fields: Start of frame
+12277074-12277337 CAN: Fields: Identifier: 836 (0x344)
+12277338-12277361 CAN: Fields: Substitute remote request: 1
+12277362-12277385 CAN: Fields: Identifier extension bit: extended frame
+12277386-12277865 CAN: Fields: Extended Identifier: 65540 (0x10004)
+12277386-12277865 CAN: Fields: Full Identifier: 219217924 (0xd110004)
+12277866-12277889 CAN: Fields: Remote transmission request: data frame
+12277890-12277913 CAN: Fields: Reserved bit 1: 0
+12277914-12277937 CAN: Fields: Reserved bit 0: 0
+12277961-12278056 CAN: Fields: Data length code: 7
+12278057-12278272 CAN: Fields: Data byte 0: 0x04
+12278273-12278464 CAN: Fields: Data byte 1: 0xb5
+12278465-12278680 CAN: Fields: Data byte 2: 0x04
+12278681-12278872 CAN: Fields: Data byte 3: 0xd0
+12278873-12279088 CAN: Fields: Data byte 4: 0x05
+12279089-12279280 CAN: Fields: Data byte 5: 0x6a
+12279281-12279496 CAN: Fields: Data byte 6: 0x00
+12279497-12279855 CAN: Fields: CRC-15 sequence: 0x48e6
+12279856-12279879 CAN: Fields: CRC delimiter: 1
+12279881-12279904 CAN: Fields: ACK slot: ACK
+12279905-12279928 CAN: Fields: ACK delimiter: 1
+12279929-12280096 CAN: Fields: End of frame
+```
+
+Represents data captured from real hardware network using a logic analyser, for example in `Data Captures/JJ Cal OK.txt`. The other form is:
+
+```t+3.36959 | RX id: 0xd000001; 01,00,97,
+t+6.02012 | TX id: 0xd010004; 43,2d,69,6e,61,74,6f,72,
+t+6.02022 | TX id: 0xdcb0004; 50,00,00,00,00,46,63,00,
+t+6.02028 | TX id: 0xd040004; 00,30,30,30,
+t+6.02033 | TX id: 0xd110004; 04,70,04,38,04,6f,00,
+t+6.02037 | TX id: 0xd000004; 00,00,00,
+t+6.02042 | TX id: 0xdca0004; 07,46,
+t+6.02046 | TX id: 0xd210004; 01,01,10,
+t+7.86541 | TX id: 0xd220004; 01,01,00,
+t+8.36054 | RX id: 0xd000001; 01,00,97,
+t+9.02658 | TX id: 0xd010004; 43,2d,69,6e,61,74,6f,72,
+t+9.02666 | TX id: 0xdcb0004; 50,00,00,00,00,46,63,00,
+t+9.03708 | TX id: 0xd040004; 00,30,30,30,
+t+9.05768 | TX id: 0xd110004; 04,70,04,38,04,6f,00,
+t+9.07827 | TX id: 0xd000004; 00,00,00,
+t+9.09919 | TX id: 0xdca0004; 07,46,
+t+9.11982 | TX id: 0xd210004; 01,01,10,
+t+9.71534 | RX id: 0xdc90001; 46,
+t+9.73223 | RX id: 0xd080001; 04,05,04,07,01,
+```
+This represents data captured using the code under `PythonTester/`, for example `Data Captures/CO2CalFail400ppm.txt`. For this format the "head" side of the network is simulated in the script and the handsets' response (RX in the log) is the only data being produced by Shearwater hardware/software. This form allows for specific situations to be simulated, but may not accurately represent the behavior of a real system.
+
 # TO DO
 - Demo selectable options in menu
 - Demo multiple devices on bus
