@@ -263,3 +263,19 @@ Byte 4 is 0x1e
 | 1             | 0x23            |
 | 2-3           | 0x00            |
 | 4             | 0x1e            |
+
+# Diving
+ID: 0xDCC0004
+
+Handset sends diving status and dive number.
+
+| Byte          | Value           |
+| ------------- | -------------   |
+| 0             | Status          |
+| 1-2           | Dive Number     |
+
+
+| Byte 0 | Meaning         |
+| ------ | --------------- |
+| 0x00   | Begin           |
+| 0x01   | End             |

@@ -73,7 +73,7 @@ Devices sharing an ID will behave identically with different controllers, this h
 | `0xC9`     | [Setpoint](Messaging/PPO2.md#setpoint)               |
 | `0xCA`     | [Cell status](Messaging/PPO2.md#cell-status)         |
 | `0xCB`     | [Status](Messaging/Device%20Metadata.md#status)      |
-| `0xCC`     | Unknown (sent by handset)                            |
+| `0xCC`     | [Diving](Messaging/Device%20Metadata.md#diving)      |
 | `0xD2`     | [Serial](Messaging/Device%20Metadata.md#serial)      |
 
 ## Testing
