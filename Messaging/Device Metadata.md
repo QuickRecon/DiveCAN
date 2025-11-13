@@ -206,6 +206,27 @@ CAN: Fields: ACK slot: ACK
 CAN: Fields: ACK delimiter: 1
 CAN: Fields: End of frame
 ```
+# Request Temp Probes Enabled
+ID: 0xDC1....
+
+
+Sent by Revo RB to query if handset has Temp Probes Enabled.
+
+# Temp Probes enabled
+ID: 0xDC4....
+
+
+Sent by handset when toggling temp probe enabled or as reply to [Request Temp Probes enabled](#request-temp-probes-enabled).
+
+| Byte  | Value   |
+| ------| ------- |
+| 0     | Enabled |
+
+| Byte 0 | Value    |
+| -------| -------  |
+| 0x00   | Disabled |
+| 0x01   | Enabled  |
+
 
 # Serial Number
 ID: 0xDD20003
