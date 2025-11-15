@@ -206,17 +206,22 @@ CAN: Fields: ACK slot: ACK
 CAN: Fields: ACK delimiter: 1
 CAN: Fields: End of frame
 ```
-# Request Temp Probes Enabled
-ID: 0xDC1....
+
+# Temperature
+ID: 0DC10002
+
+Sent by scrubber with temperature sensor to handset. If handset has temp sensors disabled it will reply with [Temperature Probes enabled](#temperature-probes-enabled)
+
+| Byte  | Value   |
+| ------| ------- |
+| 0     | Sensor  |
+| 1-2   | Temperature |
+
+# Temperature Probes enabled
+ID: 0xDC40201
 
 
-Sent by Revo RB to query if handset has Temp Probes Enabled.
-
-# Temp Probes enabled
-ID: 0xDC4....
-
-
-Sent by handset when toggling temp probe enabled or as reply to [Request Temp Probes enabled](#request-temp-probes-enabled).
+Sent by handset when toggling temp probe enabled or as reply to [Temperature](#temperature).
 
 | Byte  | Value   |
 | ------| ------- |

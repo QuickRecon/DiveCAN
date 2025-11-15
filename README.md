@@ -67,9 +67,9 @@ Devices sharing an ID will behave identically with different controllers, this h
 | `0x23`     | [CO2 Calibration Init](Messaging/CO2.md#co2-calibration-request) |
 | `0x30`     | Unknown (sent by handset) (TODO, part of [menu system](Messaging/Bus%20Devices%20Menu.md)) |
 | `0x37`     | [BusInit](Messaging/Device%20Metadata.md#bus-init)   |
-| `0xC1`     | [Request Temp Probes enabled](Messaging/Device%20Metadata.md#request-temp-probes-enabled) |
+| `0xC1`     | [Temperature](Messaging/Device%20Metadata.md#temperature) |
 | `0xC3`     | Unknown (sent by handset)                            |
-| `0xC4`     | [Temp Probes enabled](Messaging/Device%20Metadata.md#temp-probes-enabled) |
+| `0xC4`     | [Temperature Probes enabled](Messaging/Device%20Metadata.md#temperature-probes-enabled) |
 | `0xC9`     | [Setpoint](Messaging/PPO2.md#setpoint)               |
 | `0xCA`     | [Cell status](Messaging/PPO2.md#cell-status)         |
 | `0xCB`     | [Status](Messaging/Device%20Metadata.md#status)      |
