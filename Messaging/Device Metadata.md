@@ -50,8 +50,21 @@ CAN: Fields: ACK delimiter: 0
 CAN: Fields: End of frame
 ```
 
-# Unknown metadata
-sent/received by handset, observed sent by SOLO, payload always 0x02, 0x01, 0x01 in recorded dataset.
+# Shutdown Reject
+A request to shutdown was rejected.
+
+| Byte          | Value           |
+| ------------- | --------------- |
+| 0             | HS sets to 0x00 |
+| 1-2           | Reason          |
+| 3-8           | HS sets to 0xff |
+
+| Reason | Meaning              |
+| ------ | -------------------- |
+| 0x21   | Unknown              |
+| 0x23   | Diving               |
+| 0x27   | FW updating          |
+| 0x28   | Bluetooth ON / Other |
 
 # Shutdown 
 ID: 0xD03000
