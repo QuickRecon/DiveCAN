@@ -207,6 +207,32 @@ CAN: Fields: ACK delimiter: 1
 CAN: Fields: End of frame
 ```
 
+# Temperature
+ID: 0DC10002
+
+Sent by scrubber with temperature sensor to handset. If handset has temp sensors disabled it will reply with [Temperature Probes enabled](#temperature-probes-enabled)
+
+| Byte  | Value   |
+| ------| ------- |
+| 0     | Sensor  |
+| 1-2   | Temperature |
+
+# Temperature Probes enabled
+ID: 0xDC40201
+
+
+Sent by handset when toggling temp probe enabled or as reply to [Temperature](#temperature).
+
+| Byte  | Value   |
+| ------| ------- |
+| 0     | Enabled |
+
+| Byte 0 | Value    |
+| -------| -------  |
+| 0x00   | Disabled |
+| 0x01   | Enabled  |
+
+
 # Serial Number
 ID: 0xDD20003
 
