@@ -91,15 +91,15 @@ The following DIDs are currently known / suspected from reverse‑engineering:
 
 ## RequestUpload (Memory Dump)
 
-`RequestUpload (0x35)` is used to **read spi flash data** on SOLO
+`RequestUpload (0x35)` is used to **read spi flash/MCU data** on SOLO
 
 ### Region Summary
 
 | Region     | Virtual Address Range        | Real Address | Notes |
 |------------|------------------------------|--------------|-------|
-| **BLOCK1** | `0xC2000080` – `0xC2000FFF` | `0x00000080` | Addr align **8**; Size min **8**; Size align **8**; Size max `0xFFFFFFFF` |
-| **BLOCK2** | `0xC3001000` – `0xC3FFFFFF` | `0x00010000` | Addr align **0**; Size min **12**; Size align **12**; Size max `0x00FFF000` |
-| **BLOCK3** | `0xC5000000` – `0xC500007F` | `UNKNOWN`    | Addr align **0**; Size min **1**; Size align **0**; Size max `0x80` |
+| **BLOCK1** | `0xC2000080` – `0xC2000FFF` | `0x00000080` (FLASH) | Addr align **8**; Size min **8**; Size align **8** |
+| **BLOCK2** | `0xC3001000` – `0xC3FFFFFF` | `0x00010000` (FLASH)| Addr align **0**; Size min **12**; Size align **12** |
+| **BLOCK3** | `0xC5000000` – `0xC500007F` | `0x1FFFF7F0` (MCU) | Addr align **0**; Size min **1**; Size align **0**, Probably for reading the 96-bit unique device ID. ++? |
 > **Note:** The address range is treated as *virtual* by higher-level code; only ranges matching these constraints are accepted by the device. Misaligned or out-of-range requests will typically return `RequestOutOfRange (0x31)`.
 
 ---
