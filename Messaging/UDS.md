@@ -81,11 +81,11 @@ The following DIDs are currently known / suspected from reverse‑engineering:
 | `0x8209`  | `Unknown`                          | R      | Likely firmware checksum/CRC                  |
 | `0x820A`  | `Unknown`                          | R      | Battery calibration probably                  |
 | `0x820B`  | `Unknown`                          | R      | DES‑encrypted data,                           |
-| `0x9100`  | `UserSettingCount`                 | R      | Number of user settings                        |
-| `0x9110+i` | `UserSettingInfo(i)`              | R      | Label, type, editable                          |
-| `0x9130+i` | `UserSettingValue(i)`             | R      | Value/max for setting `i`                      |
-| `0x9150+i+(j<<4)` | `UserSettingLabel(i,j)`    | R      | Label for selection option `j`                 |
-| `0x9350`  | `UserSettingSave`                  | W      | Commit settings                                |
+| `0x9100`  | `UserSettingCount`                 | R      | Number of user settings                       |
+| `0x9110`  | `UserSettingInfoBase`              | R      | Label, type, editable                         |
+| `0x9130`  | `UserSettingValueBase`             | R      | Value/max for setting                         |
+| `0x9150`  | `UserSettingLabelBase`             | R      | Label for selection                           |
+| `0x9350`  | `UserSettingSaveBase`              | W      | Commit settings                               |
 
 `i` and `j` are 4‑bit indices encoded into the DID (see §9).
 
