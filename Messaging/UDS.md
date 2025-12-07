@@ -87,8 +87,6 @@ The following DIDs are currently known / suspected from reverse‑engineering:
 | `0x9150`  | `UserSettingLabelBase`             | R      | Label for selection                           |
 | `0x9350`  | `UserSettingSaveBase`              | W      | Commit settings                               |
 
-`i` and `j` are 4‑bit indices encoded into the DID (see §9).
-
 ---
 
 ## RequestUpload (Memory Dump)
