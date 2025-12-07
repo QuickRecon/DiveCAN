@@ -58,30 +58,8 @@ The following UDS services are known to be used by SOLO:
 ## ReadDataByIdentifier / WriteDataByIdentifier
 
 Both services operate on 16‑bit Data Identifiers (DIDs).
+DiveCAN only uses one RDBI per request.
 
-### Request Format
-
-```text
-00 <SID> <DID_H> <DID_L> [Payload…]
-```
-
-- `SID = 0x22` for ReadDataByIdentifier
-- `SID = 0x2E` for WriteDataByIdentifier
-- `DID_H`, `DID_L` form a big‑endian 16‑bit DID
-- `Payload` is present for write requests (WDBI)
-
-### Response Format
-
-```text
-00 <SID+0x40> <DID_H> <DID_L> <Payload…>
-```
-
-- `SID = 0x62` for RDBI responses
-- `SID = 0x6E` for WDBI responses
-
-Unknown or unsupported DIDs, or invalid access, typically return a negative response with code `RequestOutOfRange (0x31)`.
-
----
 
 ## Known/Seen Data Identifiers (DIDs)
 
@@ -117,58 +95,6 @@ The following DIDs are currently known / suspected from reverse‑engineering:
 
 `RequestUpload (0x35)` is used to **read spi flash data** on SOLO
 
-### Request Format
-
-```text
-00 35 00 44 <ADDR32> <SIZE32>
-```
-
-- `00`        : DiveCAN UDS address (physical)
-- `35`        : `SID_REQUEST_UPLOAD_REQ`
-- `00`        : Data Format Identifier (plain)
-- `44`        : Address/size length descriptor (4 bytes address, 4 bytes size)
-- `<ADDR32>`  : Big‑endian start address
-- `<SIZE32>`  : Big‑endian number of bytes requested
-
-### Response Format
-
-```text
-00 75 <MaxBlockSize>
-```
-
-- `75` is `RequestUpload` response SID
-- `MaxBlockSize` is the maximum number of payload bytes returned per `TransferData` block
-
-#### TransferData Request
-
-```text
-00 36 <BlockSeq>
-```
-
-#### TransferData Response
-
-```text
-00 76 <BlockSeq> <Data…>
-```
-
-- `BlockSeq` starts at `1` and wraps at `0xFF → 0x00`
-- The client keeps sending `TransferData` until:
-  - Returned `Data` is empty, or
-  - Total byte count reaches requested size, or
-  - A negative response is received
-
-### TransferExit
-
-Standard UDS defines `TransferExit (0x37)` to terminate a transfer:
-
-```text
-00 37
-```
-
----
-
-## Upload Regions (RequestUpload Address Map)
-
 ### Region Summary
 
 | Region     | Virtual Address Range        | Real Address | Notes |
@@ -182,21 +108,9 @@ Standard UDS defines `TransferExit (0x37)` to terminate a transfer:
 
 ## RequestDownload (Firmware Upload)
 
-`RequestDownload (0x34)` is the mirror of RequestUpload, used for **writing** firmware to device memory.
+`RequestDownload (0x34)` is used for **writing** flashing firmware to device.
 Before issuing a RequestDownload, the valid base address and maximum writable length can obtained by reading DID 0x8020 (FirmwareDownload)
 
-### Request Format
-
-```text
-00 34 00 44 <ADDR32> <SIZE32>
-```
-
-Same header semantics as RequestUpload:
-
-- `34` is `RequestDownload` request SID
-- `00` / `44` specify plain format and 4+4 byte address/size
-
----
 
 ## User Settings (Menu System)
 
@@ -263,7 +177,6 @@ Setting labels are only used for `Selection` type settings, and are not required
 
 #### SettingSave (`0x9350`)
 
-Exact payload semantics are not fully decoded.  
-Observed behavior suggests that a write to this DID triggers a **commit of pending setting changes** to non‑volatile memory.
+TODO
 
 ---
