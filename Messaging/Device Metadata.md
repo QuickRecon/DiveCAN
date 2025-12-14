@@ -13,19 +13,14 @@ There are a number of "maintenance" items that occurs on the bus that does not c
 # Bus Init
 ID: 0xD370401
 
-Byte 0 is always 0xa8.
+Very little is known about what this message actually means with regards to its content, shearwater patch notes indicate it should be possible to use this message to turn on the shearwater from the head. 
 
-Byte 1 is always 0xf3.
-
-Byte 2 is always 0x00.
-
-Very little is known about what this message actually means with regards to its content, shearwater patch notes indicate it should be possible to use this message to turn on the shearwater from the head but more experimentation is needed.
+> [!NOTE]
+> There is a quirk/bug in the handset where the only place constructing this message is given a null pointer and first 3 bytes of flash is used. (That is the the 3 first bytes of the initial stack pointer and should not at all be relevant)
 
 | Byte          | Value         |
 | ------------- | ------------- |
-| 0             | 0x8a          |
-| 1             | 0xf3          |
-| 2             | 0x00          |
+| 0-3           | Unknown       |
 
 ## Example
 Message from shearwater startup (while connected to JJ):
