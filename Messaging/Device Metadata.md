@@ -157,21 +157,26 @@ Byte 5 appears to be the setpoint that the head is attempting to maintain in the
 
 Byte 6 varies in an unknown way.
 
-Byte 7 is the device error code, the values as tabled. Error codes can be ORed together to display a combination of errors. A solenoid error, once sent, appears to persist until the shearwater is turned off and on again. Higher value error codes have been observed (and tested) however they do not present a message to their user so the use is unknown.
+Byte 7 is the device error code, the values as tabled. Solenoid and Battery error codes are ORed together. 
 
-| Error Code    | Error Message   |
-| ------------- | -------------   |
-| 0x01          | Low Ext Battery |
-| 0x04          | Solenoid Err    |
+| Error Code    | Error Message            |
+| ------------- | -------------            |
+| 0x01          | Battery Undervoltage     |
+| 0x02          | Battery Normal/Clear *   |
+| 0x03          | Battery Overvoltage  *   |
+| 0x04          | Solenoid Undercurrent *  |
+| 0x08          | Solenoid Normal / Clear *|
+| 0x0C          | Solenoid Overcurrent *   |
 
-
+(*) Solenoid must fire to transition to this
 
 | Byte          | Value           |
 | ------------- | -------------   |
 | 0             | Battery Voltage |
-| 1-4           | Unknown         |
+| 1-2           | Solenoid current|
+| 3-4           | Unknown         |
 | 5             | Setpoint        |
-| 6             | Unknown         |
+| 6             | Consensus PPO2 (0xff, 0xfe are errors) |
 | 7             | Error code      |
 
 ## Example
