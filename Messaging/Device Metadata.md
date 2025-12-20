@@ -151,27 +151,34 @@ ID: 0xDCB0004
 
 Byte 0 is the battery voltage expressed as an integer representing 00.0V, for example 0x0F would be 1.5V.
 
-Bytes 1-4 varies in an unknown way.
+Bytes 1-2 is solenoid current, presumably mAh.
+
+Bytes 3-4 Is injection duration in ms. Max 3500.
 
 Byte 5 appears to be the setpoint that the head is attempting to maintain in the form 0.00, eg 0x46 would be a PPO2 of 0.70.
 
-Byte 6 varies in an unknown way.
+Byte 6 is consensus (0xff, 0xfe are errors).
 
-Byte 7 is the device error code, the values as tabled. Error codes can be ORed together to display a combination of errors. A solenoid error, once sent, appears to persist until the shearwater is turned off and on again. Higher value error codes have been observed (and tested) however they do not present a message to their user so the use is unknown.
+Byte 7 is the device error code, the values as tabled. Solenoid and Battery error codes are ORed together. 
 
-| Error Code    | Error Message   |
-| ------------- | -------------   |
-| 0x01          | Low Ext Battery |
-| 0x04          | Solenoid Err    |
+| Error Code    | Error Message            |
+| ------------- | -------------            |
+| 0x01          | Battery Undervoltage     |
+| 0x02          | Battery Normal / Clear *   |
+| 0x03          | Battery Overvoltage  *   |
+| 0x04          | Solenoid Undercurrent *  |
+| 0x08          | Solenoid Normal / Clear *|
+| 0x0C          | Solenoid Overcurrent *   |
 
-
+(*) Solenoid must fire to transition to this
 
 | Byte          | Value           |
 | ------------- | -------------   |
 | 0             | Battery Voltage |
-| 1-4           | Unknown         |
+| 1-2           | Solenoid current|
+| 3-4           | Injection duration|
 | 5             | Setpoint        |
-| 6             | Unknown         |
+| 6             | Consensus PPO2  |
 | 7             | Error code      |
 
 ## Example
