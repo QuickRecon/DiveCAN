@@ -153,7 +153,7 @@ Byte 0 is the battery voltage expressed as an integer representing 00.0V, for ex
 
 Bytes 1-2 is solenoid current, presumably mAh.
 
-Bytes 3-4 varies in an unknown way.
+Bytes 3-4 Is injection duration in ms. Max 3500.
 
 Byte 5 appears to be the setpoint that the head is attempting to maintain in the form 0.00, eg 0x46 would be a PPO2 of 0.70.
 
@@ -176,7 +176,7 @@ Byte 7 is the device error code, the values as tabled. Solenoid and Battery erro
 | ------------- | -------------   |
 | 0             | Battery Voltage |
 | 1-2           | Solenoid current|
-| 3-4           | Unknown         |
+| 3-4           | Injection duration|
 | 5             | Setpoint        |
 | 6             | Consensus PPO2  |
 | 7             | Error code      |
