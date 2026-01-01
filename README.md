@@ -55,7 +55,7 @@ Devices sharing an ID will behave identically with different controllers, this h
 | `0x04`     | [PPO2](Messaging/PPO2.md#ppo2)                       |
 | `0x07`     | [HUD Status](Messaging/Device%20Metadata.md#hud-status) |
 | `0x08`     | [Ambient Pressure](Messaging/PPO2.md#ambient-pressure) |
-| `0x0A`     | ISO-TP/CANFD frame (TODO, part of [menu system](Messaging/Bus%20Devices%20Menu.md))|
+| `0x0A`     | [Unified Diagnostic Services](Messaging/UDS.md)      |
 | `0x0B`     | [Tank Pressure](Messaging/Pressure.md#tank-pressure) |
 | `0x10`     | NOP (ignored by handset)                             |
 | `0x11`     | [Millivolt](Messaging/PPO2.md#millivolts)            |
