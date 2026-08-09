@@ -235,6 +235,27 @@ Sent by handset when toggling temp probe enabled or as reply to [Temperature](#t
 | 0x01   | Enabled  |
 
 
+# Scrubber Status
+ID: 0x0DC30001 (handset, broadcast)
+
+Sent by the handset on rEvo rMS units — it broadcasts the temperature-based
+scrubber-life prediction once per minute.
+
+| Byte  | Value   |
+| ------| ------- |
+| 0-1   | RCT — Remaining Cycle Time, minutes, big-endian |
+| 2-3   | RST — Remaining Scrubber Time, minutes, big-endian |
+| 4     | Exhale (top) scrubber probe status |
+| 5     | Inhale (bottom) scrubber probe status |
+
+DLC is 6. RCT is the time until a canister must be cycled; RST is the time
+until CO2 breakthrough (the safety margin). Both decrement by one per minute
+during the countdown phase. Each scrubber carries a 4-sensor temperature probe
+(see [Temperature](#temperature)); the handset models the scrubber as 7 warm-up
+zones, and each probe status byte is the bitmask of those zones (bits 1..7). A
+byte with all 7 zone bits set (`0x7F` in bits 1..7) is treated as the probe
+being invalid/disconnected.
+
 # Serial Number
 ID: 0xDD20003
 

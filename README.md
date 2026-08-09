@@ -68,7 +68,7 @@ Devices sharing an ID will behave identically with different controllers, this h
 | `0x30`     | Unknown (sent by handset) (TODO, part of [menu system](Messaging/Bus%20Devices%20Menu.md)) |
 | `0x37`     | [BusInit](Messaging/Device%20Metadata.md#bus-init)   |
 | `0xC1`     | [Temperature](Messaging/Device%20Metadata.md#temperature) |
-| `0xC3`     | Unknown (sent by handset)                            |
+| `0xC3`     | [Scrubber Status](Messaging/Device%20Metadata.md#scrubber-status) (rMS, sent by handset) |
 | `0xC4`     | [Temperature Probes enabled](Messaging/Device%20Metadata.md#temperature-probes-enabled) |
 | `0xC9`     | [Setpoint](Messaging/PPO2.md#setpoint)               |
 | `0xCA`     | [Cell status](Messaging/PPO2.md#cell-status)         |
