@@ -66,7 +66,15 @@ Devices sharing an ID will behave identically with different controllers, this h
 | `0x22`     | [CO2 Calibration Response](Messaging/CO2.md#co2-calibration-response) |
 | `0x23`     | [CO2 Calibration Init](Messaging/CO2.md#co2-calibration-request) |
 | `0x30`     | Unknown (sent by handset) (TODO, part of [menu system](Messaging/Bus%20Devices%20Menu.md)) |
+| `0x32`     | [Cell Temperature](Messaging/Cell%20Info.md#cell-temperature) |
+| `0x33`     | [Cell Live Value](Messaging/Cell%20Info.md#cell-live-value) |
+| `0x34`     | [Cell Read Request](Messaging/Cell%20Info.md#cell-read-request) |
+| `0x35`     | [Cell Info Response](Messaging/Cell%20Info.md#cell-info-response) |
+| `0x36`     | [Cell Record Write](Messaging/Cell%20Info.md#cell-record-write) |
 | `0x37`     | [BusInit](Messaging/Device%20Metadata.md#bus-init)   |
+| `0x38`     | [Cell Record Query](Messaging/Cell%20Info.md#cell-record-query) |
+| `0x39`     | [Cell Record Ack](Messaging/Cell%20Info.md#cell-record-ack) |
+| `0x40`     | [Cell Record Select](Messaging/Cell%20Info.md#cell-record-select) |
 | `0xC1`     | [Temperature](Messaging/Device%20Metadata.md#temperature) |
 | `0xC3`     | [Scrubber Status](Messaging/Device%20Metadata.md#scrubber-status) (rMS, sent by handset) |
 | `0xC4`     | [Temperature Probes enabled](Messaging/Device%20Metadata.md#temperature-probes-enabled) |
